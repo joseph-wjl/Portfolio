@@ -1,10 +1,9 @@
-// import gsap from "gsap";
-// import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 // import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
 import HeroVid from './hero-1.mp4'
-
 import Button from "./Button";
 
 // gsap.registerPlugin(ScrollTrigger);
@@ -82,12 +81,18 @@ export default function Hero() {
   
     // const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
   
+    useGSAP(() => {
+        gsap.set('#video-frame', {
+            clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)'
+        })
+    })
+
     return (
       <div className="relative h-dvh w-screen overflow-x-hidden">
         
   
         <div
-          id="video-frame"
+          id="video-frame" className="bg-yellow-100"
         //   className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
         >
   
@@ -115,8 +120,8 @@ export default function Hero() {
           </div>
         </div>
   
-        <h1 className="absolute bottom-5 right-5 text-lg">
-          I am a Frontend Developer. 
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 text-lg text-black">
+          I am a Web Developer. 
         </h1>
       </div>
     );
