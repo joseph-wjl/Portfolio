@@ -5,6 +5,7 @@ import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
 import HeroVid from './hero-1.mp4'
 import Button from "./Button";
+import './Hero.css'
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -83,11 +84,13 @@ export default function Hero() {
   
     useGSAP(() => {
         gsap.set('#video-frame', {
-            clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)'
+            clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)',
+            WebkitClipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)',
         })
     })
 
     return (
+      <>
       <div className="relative h-dvh w-screen overflow-x-hidden">
         
   
@@ -114,7 +117,7 @@ export default function Hero() {
                 id="watch-trailer"
                 title="More about me"
                 leftIcon={<TiLocationArrow />}
-                containerClass="bg-blue-300 flex-center gap-1"
+                containerClass="bg-yellow-300 flex-center gap-1"
               />
             </div>
           </div>
@@ -124,7 +127,11 @@ export default function Hero() {
           I am a Web Developer. 
         </h1>
       </div>
+      {/* <Spline scene="https://prod.spline.design/3ArfHPRWmgJbL5vN/scene.splinecode" /> */}
+    </>
     );
-  };
+  }
+  
+  
   
   
