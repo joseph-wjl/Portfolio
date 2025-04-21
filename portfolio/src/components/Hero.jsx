@@ -4,8 +4,8 @@ import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
 import HeroVid from './hero-1.mp4'
 import Button from "./Button";
-import './Hero.css'
 import { ScrollTrigger } from "gsap/all";
+import bannerImg from "/public/img/about.webp"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -98,16 +98,6 @@ export default function Hero() {
           scrub: true,
         },
       });
-      // Animate text color change
-  gsap.to("#developer-text", {
-    color: "black", // Target color
-    scrollTrigger: {
-      trigger: "#video-frame",
-      start: "center center",
-      end: "bottom center",
-      scrub: true,
-    },
-  });
     });
 
     return (
@@ -119,9 +109,10 @@ export default function Hero() {
           id="video-frame" className=""
         //   className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
         >
-            <video src={HeroVid} autoPlay loop muted className="absolute left-0 top-0 size-full object-cover object-center" id="current-video">
+            {/* <video src={HeroVid} autoPlay loop muted className="absolute left-0 top-0 size-full object-cover object-center" id="current-video">
 
-            </video>
+            </video> */}
+            <img src={bannerImg} className="absolute left-0 top-0 size-full object-cover object-center"></img>
             <section className="z-0 min-h-screen bg-blue-500"/>
           {/* <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-black-75">
             G<b>A</b>MING
@@ -139,7 +130,7 @@ export default function Hero() {
   
               <Button
                 id="watch-trailer"
-                title="More about me"
+                title="Learn More"
                 leftIcon={<TiLocationArrow />}
                 containerClass="bg-yellow-300 flex-center gap-1"
               />
