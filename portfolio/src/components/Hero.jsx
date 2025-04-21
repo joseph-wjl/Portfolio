@@ -7,7 +7,7 @@ import HeroVid from './hero-1.mp4'
 import Button from "./Button";
 import './Hero.css'
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
     // const [currentIndex, setCurrentIndex] = useState(1);
@@ -85,9 +85,22 @@ export default function Hero() {
     useGSAP(() => {
         gsap.set('#video-frame', {
             clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)',
-            WebkitClipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)',
+            borderRadius: '0 0 40% 10%',
         })
     })
+
+      gsap.from('#video-frame', {
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        borderRadius: '0% 0% 0% 0%',
+        ease: 'power1.inOut',
+        scrollTrigger: {
+          trigger: '#video-frame',
+          start: 'center center',
+          end: 'bottom center',
+          scrub: true,
+        }
+      }
+      )
 
     return (
       <>
@@ -98,17 +111,19 @@ export default function Hero() {
           id="video-frame" className="bg-yellow-100"
         //   className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
         >
-  
+            <video src={HeroVid} autoPlay loop muted className="h-full w-full object-cover object-center" id="current-video">
+
+            </video>
           {/* <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-black-75">
             G<b>A</b>MING
           </h1> */}
   
           <div className="absolute left-0 top-0 z-40 size-full">
             <div className="mt-24 px-5 sm:px-10">
-              <h1 className="special-font hero-heading text-black-100">
+              <h1 className="special-font hero-heading text-black">
                 Hi, I am Joseph.
               </h1>
-  
+
               <p className="mb-5 max-w-64 font-robert-regular text-black-100">
                 I build sleek & stunning websites.
               </p>
