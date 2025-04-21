@@ -1,11 +1,11 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-// import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
 import HeroVid from './hero-1.mp4'
 import Button from "./Button";
 import './Hero.css'
+import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,48 +83,57 @@ export default function Hero() {
     // const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
   
     useGSAP(() => {
-        gsap.set('#video-frame', {
-            clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)',
-            borderRadius: '0 0 40% 10%',
-        })
-    })
-
-      gsap.from('#video-frame', {
-        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-        borderRadius: '0% 0% 0% 0%',
-        ease: 'power1.inOut',
+      gsap.set("#video-frame", {
+        clipPath: "polygon(40% 0, 90% 0, 65% 100%, 10% 100%)",
+        borderRadius: "0% 0% 40% 10%",
+      });
+      gsap.from("#video-frame", {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        borderRadius: "0% 0% 0% 0%",
+        ease: "power1.inOut",
         scrollTrigger: {
-          trigger: '#video-frame',
-          start: 'center center',
-          end: 'bottom center',
+          trigger: "#video-frame",
+          start: "center center",
+          end: "bottom center",
           scrub: true,
-        }
-      }
-      )
+        },
+      });
+      // Animate text color change
+  gsap.to("#developer-text", {
+    color: "black", // Target color
+    scrollTrigger: {
+      trigger: "#video-frame",
+      start: "center center",
+      end: "bottom center",
+      scrub: true,
+    },
+  });
+    });
 
     return (
       <>
-      <div className="relative h-dvh w-screen overflow-x-hidden">
+      <div className="relative h-dvh w-screen overflow-x-hidden bg-yellow-300">
         
   
         <div
-          id="video-frame" className="bg-yellow-100"
+          id="video-frame" className=""
         //   className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
         >
-            <video src={HeroVid} autoPlay loop muted className="h-full w-full object-cover object-center" id="current-video">
+            <video src={HeroVid} autoPlay loop muted className="absolute left-0 top-0 size-full object-cover object-center" id="current-video">
 
             </video>
+            <section className="z-0 min-h-screen bg-blue-500"/>
           {/* <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-black-75">
             G<b>A</b>MING
           </h1> */}
   
           <div className="absolute left-0 top-0 z-40 size-full">
             <div className="mt-24 px-5 sm:px-10">
-              <h1 className="special-font hero-heading text-black">
+              <h1 className="special-font hero-heading text-blue-100">
                 Hi, I am Joseph.
               </h1>
 
-              <p className="mb-5 max-w-64 font-robert-regular text-black-100">
+              <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
                 I build sleek & stunning websites.
               </p>
   
@@ -138,7 +147,7 @@ export default function Hero() {
           </div>
         </div>
   
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 text-lg text-black">
+        <h1 className="absolute bottom-5 right-5 text-2xl font-bold text-black">
           I am a Web Developer. 
         </h1>
       </div>
