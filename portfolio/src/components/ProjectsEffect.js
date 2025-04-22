@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/all';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Projects() {
+export default function ProjectsEffect() {
 
 const lenis = new Lenis();
     lenis.on("scroll", ScrollTrigger.update);

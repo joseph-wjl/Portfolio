@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
-// import gsap from "gsap";
-// import Lenis from "@studio-freight/lenis";
-// import { ScrollTrigger } from "gsap/all";
-
-// gsap.registerPlugin(ScrollTrigger);
+import { applyProjectsLogic } from "../logic/projectsLogic";
 
 export default function Projects() {
-    console.log("Projects component rendered");
+  console.log("Projects component rendered");
+
+  useEffect(() => {
+    applyProjectsLogic();
+  }, []); // Run once after the component mounts
 
   return (
     <div className="steps">

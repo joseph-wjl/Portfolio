@@ -13,7 +13,7 @@ export default function App() {
       {/* <SplineComponent /> */}
       <About />
       <Projects />
-      <section className="z-0 min-h-screen bg-blue-500" />
+      {/* <section className="z-0 min-h-screen bg-blue-500" /> */}
       <Footer />
     </main>
   );

@@ -1,0 +1,88 @@
+import gsap from "gsap";
+import Lenis from "@studio-freight/lenis";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export function applyProjectsLogic() {
+  const lenis = new Lenis();
+  lenis.on("scroll", ScrollTrigger.update);
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+  gsap.ticker.lagSmoothing(0);
+
+  const stickySection = document.querySelector(".steps");
+  const stickyHeight = window.innerHeight * 7;
+  const cards = document.querySelectorAll(".card");
+  const counterContainer = document.querySelector(".count-container");
+  const totalCards = cards.length;
+
+  ScrollTrigger.create({
+    trigger: stickySection,
+    start: "top top",
+    end: `+=${stickyHeight}px`,
+    pin: true,
+    pinSpacing: true,
+    onUpdate: (self) => {
+      positionCards(self.progress);
+    },
+  });
+
+  const getRadius = () => {
+    return window.innerWidth < 900
+      ? window.innerWidth * 7.5
+      : window.innerWidth * 2.5;
+  };
+
+  const positionCards = (progress = 0) => {
+    const radius = getRadius();
+    const totalTravel = 1 + totalCards / 7.5;
+    const adjustedProgress = (progress * totalTravel - 1) * 0.75;
+
+    const arcAngle = Math.PI * 0.4;
+    const startAngle = Math.PI / 2 - arcAngle / 2;
+
+    cards.forEach((card, i) => {
+      const normalizedProgress = (totalCards - 1 - i) / totalCards;
+      const cardsProgress = normalizedProgress + adjustedProgress;
+      const angle = startAngle + arcAngle * cardsProgress;
+
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
+      const rotation = (angle - Math.PI / 2) * (180 / Math.PI);
+
+      gsap.set(card, {
+        x: x,
+        y: -y + radius,
+        rotation: -rotation,
+        transformOrigin: "center center",
+      });
+    });
+  };
+
+  positionCards(0);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const currentCardIndex = Array.from(cards).indexOf(entry.target);
+
+          const targetY = 150 - currentCardIndex * 150;
+          gsap.to(counterContainer, {
+            y: targetY,
+            duration: 0.3,
+            ease: "power1.inOut",
+            overwrite: true,
+          });
+        }
+      });
+    },
+    { root: null, rootMargin: "0% 0%", threshold: 0.5 }
+  );
+
+  cards.forEach((card) => observer.observe(card));
+
+  window.addEventListener("resize", () => positionCards(0));
+}
