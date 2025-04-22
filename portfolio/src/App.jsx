@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import Footer from "./components/Footer";
 import SplineComponent from "./components/SplineComponent";
 
@@ -9,6 +10,7 @@ export default function App() {
       <Navbar />
       <Hero />
       {/* <SplineComponent /> */}
+      <About />
       <section className="z-0 min-h-screen bg-blue-500" />
       <Footer />
     </main>

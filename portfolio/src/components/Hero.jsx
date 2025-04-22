@@ -35,11 +35,11 @@ export default function Hero() {
       <div id="video-frame" className="relative">
         {/* Spline Background */}
         <div className="absolute left-0 top-0 size-full z-0">
-          <Spline
+          {/* <Spline
             scene="https://prod.spline.design/3ArfHPRWmgJbL5vN/scene.splinecode" 
             className="w-full h-full object-cover"
             ref={splineRef}
-          />
+          /> */}
         </div>
         {/* Overlay for Readability */}
         <div className="absolute left-0 top-0 size-full bg-black bg-opacity-40 z-5"></div>
