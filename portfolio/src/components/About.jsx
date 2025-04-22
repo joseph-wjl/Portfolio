@@ -44,10 +44,10 @@ export default function About() {
         </div>
         <div className="h-dvh w-screen" id="clip">
             <div className="mask-clip-path about-image">
-                {/* <img src="img/ui.jpeg" alt="Background" 
-                className="absolute left-0 top-0 size-full object-cover"></img> */}
-                <Spline scene="https://prod.spline.design/3ArfHPRWmgJbL5vN/scene.splinecode" 
-                className="absolute left-0 top-0 size-full object-cover"/>
+                <img src="img/ui.jpeg" alt="Background" 
+                className="absolute left-0 top-0 size-full object-cover"></img>
+                {/* <Spline scene="https://prod.spline.design/3ArfHPRWmgJbL5vN/scene.splinecode" 
+                className="absolute left-0 top-0 size-full object-cover"/> */}
             </div>
         </div>
     </div>
