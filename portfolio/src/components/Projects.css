@@ -1,3 +1,10 @@
+.steps {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .cards {
     position: absolute;
     top: 25%;
