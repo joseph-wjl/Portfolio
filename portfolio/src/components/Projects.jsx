@@ -3,7 +3,7 @@ import "./Projects.css";
 import { applyProjectsLogic } from "../logic/projectsLogic";
 
 export default function Projects() {
-    
+
   useEffect(() => {
     applyProjectsLogic();
   }, []); 
@@ -13,15 +13,15 @@ export default function Projects() {
         <div className="steps">
         <div className="step-counter">
             <div className="counter-title">
-            <h1>Projects</h1>
+            <h1 className="bg-black z-10">Projects</h1>
             </div>
             <div className="count">
             <div className="count-container">
                 <h1>Altruism Healthcare</h1>
                 <h1>Eat Out</h1>
-                <h1>03</h1>
-                <h1>04</h1>
-                <h1>05</h1>
+                <h1>Coming Soon</h1>
+                <h1>Coming Soon</h1>
+                <h1>Coming Soon</h1>
             </div>
             </div>
         </div>

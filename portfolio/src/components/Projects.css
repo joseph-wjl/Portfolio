@@ -6,6 +6,7 @@
     width: 150vw;
     height: 600px;
     will-change: transform;
+    z-index: 40;
 }
 
 .card {
@@ -56,10 +57,12 @@
     height: 150px;
     clip-path: polygon(0, 0, 100%, 0, 100%, 100%, 0, 100%);
     overflow: hidden;
+    
 }
 
 .count {
     top: -10px;
+    
 }
 
 .count-container {
