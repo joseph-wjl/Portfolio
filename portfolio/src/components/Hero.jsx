@@ -59,6 +59,12 @@ export default function Hero() {
               title="Learn More"
               leftIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
+              onClick={() => {
+                const aboutMeSection = document.getElementById("about");
+                if (aboutMeSection) {
+                  aboutMeSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             />
           </div>
         </div>

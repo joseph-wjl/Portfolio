@@ -20,17 +20,19 @@
     flex-direction: column;
     gap: 1em;
     will-change: transform;
+    background-color: white;
 }
 
 .card-img {
     flex: 1;
-    border-radius: 0.5em;
+    /* border-radius: 0.5em; */
     overflow: hidden;
 }
 
 .card-content {
     width: 100%;
     height: 60px;
+    background-color: grey;
 }
 
 .card-content p {

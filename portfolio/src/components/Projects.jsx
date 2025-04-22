@@ -3,64 +3,65 @@ import "./Projects.css";
 import { applyProjectsLogic } from "../logic/projectsLogic";
 
 export default function Projects() {
-  console.log("Projects component rendered");
-
+    
   useEffect(() => {
     applyProjectsLogic();
-  }, []); // Run once after the component mounts
+  }, []); 
 
   return (
-    <div className="steps">
-      <div className="step-counter">
-        <div className="counter-title">
-          <h1>Projects</h1>
+    <div className="bg-black">
+        <div className="steps">
+        <div className="step-counter">
+            <div className="counter-title">
+            <h1>Projects</h1>
+            </div>
+            <div className="count">
+            <div className="count-container">
+                <h1>Altruism Healthcare</h1>
+                <h1>Eat Out</h1>
+                <h1>03</h1>
+                <h1>04</h1>
+                <h1>05</h1>
+            </div>
+            </div>
         </div>
-        <div className="count">
-          <div className="count-container">
-            <h1>Altruism Healthcare</h1>
-            <h1>Eat Out</h1>
-            <h1>03</h1>
-            <h1>04</h1>
-            <h1>05</h1>
-          </div>
+        <div className="cards">
+            <div className="card">
+            <div className="card-img">
+                <img src="/img/altruism-img.JPG" className="project-img cursor-pointer" alt="Project" />
+            </div>
+            <div className="card-content">
+                <p>Card description</p>
+            </div>
+            </div>
+            <div className="card">
+            <div className="card-img">
+                <img src="/img/eatout-img.JPG" className="project-img" alt="Project" />
+            </div>
+            <div className="card-content">
+                <p>Card description</p>
+            </div>
+            </div>
+            <div className="card">
+            <div className="card-img">
+                <img src="/img/ui.jpeg" className="project-img" alt="Project" />
+            </div>
+            <div className="card-content">
+                <p>Card description</p>
+            </div>
+            </div>
+            <div className="card">
+            <div className="card-img">
+                <img src="/img/ui.jpeg" className="project-img" alt="Project" />
+            </div>
+            <div className="card-content">
+                <p>Card description</p>
+            </div>
+            </div>
+            <div className="card-empty"></div>
+            <div className="card-empty"></div>
         </div>
-      </div>
-      <div className="cards">
-        <div className="card">
-          <div className="card-img">
-            <img src="/img/ui.jpeg" className="project-img" alt="Project" />
-          </div>
-          <div className="card-content">
-            <p>Card description</p>
-          </div>
         </div>
-        <div className="card">
-          <div className="card-img">
-            <img src="/img/ui.jpeg" className="project-img" alt="Project" />
-          </div>
-          <div className="card-content">
-            <p>Card description</p>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-img">
-            <img src="/img/ui.jpeg" className="project-img" alt="Project" />
-          </div>
-          <div className="card-content">
-            <p>Card description</p>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-img">
-            <img src="/img/ui.jpeg" className="project-img" alt="Project" />
-          </div>
-          <div className="card-content">
-            <p>Card description</p>
-          </div>
-        </div>
-        <div className="card-empty"></div>
-        <div className="card-empty"></div>
-      </div>
     </div>
   );
 }
