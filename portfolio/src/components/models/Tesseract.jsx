@@ -37,7 +37,7 @@ export default function Tesseract() {
 
         <TesseractLights />
         <group 
-        scale={isMobile? 7 : 4}
+        scale={isMobile? 2 : 3}
         // position = {[0, -3.5, 0]}
         rotation = {[0, -Math.PI/4, 0]}
         onPointerOver={handlePointerOver} 
