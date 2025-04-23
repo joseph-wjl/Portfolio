@@ -48,20 +48,20 @@ export default function Projects() {
                 </div>
             </a>    
             <div className="card cursor-pointer">
-            <div className="card-img">
-                <img src="/img/ui.jpeg" className="project-img" alt="Project" />
-            </div>
-            <div className="card-content">
-                <p>Card description</p>
-            </div>
+                <div className="card-img">
+                    <img src="/img/ui.jpeg" className="project-img" alt="Project" />
+                </div>
+                <div className="card-content">
+                    <p>Card description</p>
+                </div>
             </div>
             <div className="card cursor-pointer">
-            <div className="card-img">
-                <img src="/img/ui.jpeg" className="project-img" alt="Project" />
-            </div>
-            <div className="card-content">
-                <p>Card description</p>
-            </div>
+                <div className="card-img">
+                    <img src="/img/ui.jpeg" className="project-img" alt="Project" />
+                </div>
+                <div className="card-content">
+                    <p>Card description</p>
+                </div>
             </div>
             <div className="card-empty"></div>
             <div className="card-empty"></div>
