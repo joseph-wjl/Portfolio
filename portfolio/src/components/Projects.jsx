@@ -25,24 +25,29 @@ export default function Projects() {
             </div>
             </div>
         </div>
+        
         <div className="cards">
-            <div className="card">
-            <div className="card-img">
-                <img src="/img/altruism-img.JPG" className="project-img cursor-pointer" alt="Project" />
-            </div>
-            <div className="card-content">
-                <p>Card description</p>
-            </div>
-            </div>
-            <div className="card">
-            <div className="card-img">
-                <img src="/img/eatout-img.JPG" className="project-img" alt="Project" />
-            </div>
-            <div className="card-content">
-                <p>Card description</p>
-            </div>
-            </div>
-            <div className="card">
+            <a href="https://altruism-hk.netlify.app/" target="_blank">
+                <div className="card cursor-pointer">
+                    <div className="card-img">
+                        <img src="/img/altruism-img.JPG" className="project-img cursor-pointer" alt="Project" />
+                    </div>
+                    <div className="card-content">
+                        <p>Card description</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://eatout-hk.netlify.app/" target="_blank">
+                <div className="card cursor-pointer">
+                    <div className="card-img">
+                        <img src="/img/eatout-img.JPG" className="project-img" alt="Project" />
+                    </div>
+                    <div className="card-content">
+                        <p>Card description</p>
+                    </div>
+                </div>
+            </a>    
+            <div className="card cursor-pointer">
             <div className="card-img">
                 <img src="/img/ui.jpeg" className="project-img" alt="Project" />
             </div>
@@ -50,7 +55,7 @@ export default function Projects() {
                 <p>Card description</p>
             </div>
             </div>
-            <div className="card">
+            <div className="card cursor-pointer">
             <div className="card-img">
                 <img src="/img/ui.jpeg" className="project-img" alt="Project" />
             </div>
