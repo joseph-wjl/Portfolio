@@ -119,7 +119,7 @@ export default function Contact() {
             />
             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="subject" className="block text-blue-100 font-robert-regular mb-2">
               Subject
             </label>
@@ -132,7 +132,7 @@ export default function Contact() {
               className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
             />
             {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
-          </div>
+          </div> */}
           <div className="mb-4">
             <label htmlFor="message" className="block text-blue-100 font-robert-regular mb-2">
               Message
@@ -142,7 +142,7 @@ export default function Contact() {
               name="message"
               value={form.message}
               onChange={handleChange}
-              className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300 resize-vertical"
+              className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300 resize-vertical resize-none"
               rows="5"
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
@@ -152,7 +152,7 @@ export default function Contact() {
               type="submit"
               title="Send Message"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1 text-blue-900 hover:bg-yellow-400 transition"
+              containerClass="bg-yellow-300 flex-center gap-1 text-black hover:bg-yellow-400 transition"
             />
           </div>
           {status === 'success' && (
