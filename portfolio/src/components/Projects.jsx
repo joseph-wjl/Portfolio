@@ -19,7 +19,7 @@ export default function Projects() {
             <div className="count-container">
                 <h1>Altruism Healthcare</h1>
                 <h1>Eat Out</h1>
-                <h1>Coming Soon</h1>
+                <h1>Portfolio</h1>
                 <h1>Coming Soon</h1>
                 <h1>Coming Soon</h1>
             </div>
@@ -46,15 +46,17 @@ export default function Projects() {
                         <p>Card description</p>
                     </div>
                 </div>
-            </a>    
-            <div className="card cursor-pointer">
-                <div className="card-img">
-                    <img src="/img/ui.jpeg" className="project-img" alt="Project" />
+            </a>
+            <a href="https://eatout-hk.netlify.app/" target="_blank">
+                <div className="card cursor-pointer">
+                    <div className="card-img">
+                        <img src="/img/ui.jpeg" className="project-img" alt="Project" />
+                    </div>
+                    <div className="card-content">
+                        <p>Card description</p>
+                    </div>
                 </div>
-                <div className="card-content">
-                    <p>Card description</p>
-                </div>
-            </div>
+            </a>        
             <div className="card cursor-pointer">
                 <div className="card-img">
                     <img src="/img/ui.jpeg" className="project-img" alt="Project" />

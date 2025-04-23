@@ -1,12 +1,15 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TiLocationArrow } from "react-icons/ti";
-import { useEffect, useRef, useState } from "react";
-import Spline from "@splinetool/react-spline"; 
+import { useEffect, useRef, useState, Suspense, lazy } from "react";
+// import Spline from "@splinetool/react-spline"; 
 import Button from "./Button";
 import { ScrollTrigger } from "gsap/all";
+import Tesserat from "./models/Tesserat";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const Spline = lazy(() => import("@splinetool/react-spline"));
 
 export default function Hero() {
   // Ref for Spline to apply GSAP animation (optional if clip-path applies to parent)
@@ -35,11 +38,19 @@ export default function Hero() {
       <div id="video-frame" className="relative">
         {/* Spline Background */}
         <div className="absolute left-0 top-0 size-full z-0">
-          {/* <Spline
-            scene="https://prod.spline.design/3ArfHPRWmgJbL5vN/scene.splinecode" 
-            className="w-full h-full object-cover"
-            ref={splineRef}
-          /> */}
+          {/* <Suspense fallback={<div>Loading...</div>}>
+              <Spline
+                scene="https://prod.spline.design/3ArfHPRWmgJbL5vN/scene.splinecode"
+                className="w-full h-full object-cover"
+              />
+            </Suspense> */}
+
+            {/* <figure>
+              <div>
+                <Tesserat />
+              </div>
+            </figure> */}
+
         </div>
         {/* Overlay for Readability */}
         <div className="absolute left-0 top-0 size-full bg-black bg-opacity-40 z-5"></div>
