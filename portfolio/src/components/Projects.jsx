@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Projects.css";
+import "../style/Projects.css";
 import { applyProjectsLogic } from "../logic/projectsLogic";
 
 export default function Projects() {

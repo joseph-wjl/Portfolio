@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SplineComponent from "./components/SplineComponent";
 
@@ -14,6 +15,7 @@ export default function App() {
       <About />
       <Projects />
       {/* <section className="z-0 min-h-screen bg-blue-500" /> */}
+      <Contact />
       <Footer />
     </main>
   );

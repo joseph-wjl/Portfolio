@@ -4,12 +4,12 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <div className="flex justify-center h-10 items-center gap-4">
+        <div className="flex justify-center h-20 items-center gap-4">
             <a href="https://linkedin.com/in/joseph-wjl" target="_blank">
-                <FaLinkedin className="cursor-pointer" />
+                <FaLinkedin className="cursor-pointer text-3xl" />
             </a>
             <a href="https://github.com/joseph-wjl" target="_blank">
-                <FaGithub className="cursor-pointer"/>
+                <FaGithub className="cursor-pointer text-3xl"/>
             </a>
         </div>
     )
