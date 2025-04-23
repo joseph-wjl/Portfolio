@@ -1,10 +1,18 @@
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
-export function DarkTesseract(props) {
+export function TesseractGlb(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/dark_tesseract.glb')
   const { actions } = useAnimations(animations, group)
+
+   // Play the first animation when the component mounts
+   React.useEffect(() => {
+    if (actions) {
+      actions[Object.keys(actions)[0]]?.play(); // Play the first animation
+    }
+  }, [actions]);
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">

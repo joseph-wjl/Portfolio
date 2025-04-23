@@ -5,7 +5,9 @@ import { useEffect, useRef, useState, Suspense, lazy } from "react";
 // import Spline from "@splinetool/react-spline"; 
 import Button from "./Button";
 import { ScrollTrigger } from "gsap/all";
-// import Tesserat from "./models/Tesserat";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import Tesseract from "./models/Tesseract";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,6 +37,16 @@ export default function Hero() {
 
   return (
     <div id="home" className="relative h-dvh w-screen overflow-x-hidden bg-yellow-300">
+      {/* 3D Background */}
+      {/* <div id="video-frame" className="absolute inset-0 z-0">
+        <Suspense fallback={<div>Loading...</div>}>
+          <Canvas camera={{ position: [0, 0, 15], fov: 45 }}> */}
+            {/* <ambientLight intensity={0.2} color="#1a1a40" />
+            <directionalLight position={[5, 5, 5]} intensity={1} color="#ffffff" /> */}
+            {/* <OrbitControls enablePan={false} enableZoom={true} /> */}
+            {/* <Tesseract />
+          </Canvas>
+        </Suspense> */}
       <div id="video-frame" className="relative">
         {/* Spline Background */}
         <div className="absolute left-0 top-0 size-full z-0">
@@ -45,11 +57,11 @@ export default function Hero() {
               />
             </Suspense> */}
 
-            {/* <figure>
+            <figure>
               <div>
-                <Tesserat />
+                <Tesseract />
               </div>
-            </figure> */}
+            </figure>
 
         </div>
         {/* Overlay for Readability */}
