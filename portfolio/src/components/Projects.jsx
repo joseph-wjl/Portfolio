@@ -9,7 +9,7 @@ export default function Projects() {
   }, []); 
 
   return (
-    <div className="bg-black">
+    <div id="projects" className="bg-black">
         <div className="steps">
         <div className="step-counter">
             <div className="counter-title">

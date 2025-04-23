@@ -42,11 +42,25 @@ export default function Navbar() {
                     <div className="flex h-full items-center">
                         <div className="hidden md:block">
                             {navItems.map((item) => (
-                                <a key={item} 
-                                href={`#${item.toLowerCase()}`}
-                                className="nav-hover-btn">
-                                    {item}
-                                </a>
+                                <button
+                                key={item}
+                                onClick={() => {
+                                  const section = document.getElementById(item.toLowerCase().replace(" ", "-"));
+                                  if (section) {
+                                    section.scrollIntoView({ behavior: "smooth" });
+                                  }
+                                }}
+                                className="nav-hover-btn"
+                              >
+                                {item}
+                              </button>
+                            //   <a
+                            //   key={item}
+                            //   href={`#${item.toLowerCase().replace(" ", "-")}`}
+                            //   className="nav-hover-btn"
+                            // >
+                            //   {item}
+                            // </a>
                             ))}
                         </div>
                     </div>

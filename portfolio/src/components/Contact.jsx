@@ -63,7 +63,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative w-full min-h-screen bg-blue-200 flex items-center justify-center py-16">
+    <section id="contact" className="relative w-full min-h-screen bg-blue-200 flex items-center justify-center py-16">
       <div className="container mx-auto px-5 sm:px-10">
         <h2 className="special-font text-4xl sm:text-5xl font-bold text-blue-100 mb-8 text-center">
           Get In Touch

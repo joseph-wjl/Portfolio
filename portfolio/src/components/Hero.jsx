@@ -34,7 +34,7 @@ export default function Hero() {
   });
 
   return (
-    <div className="relative h-dvh w-screen overflow-x-hidden bg-yellow-300">
+    <div id="home" className="relative h-dvh w-screen overflow-x-hidden bg-yellow-300">
       <div id="video-frame" className="relative">
         {/* Spline Background */}
         <div className="absolute left-0 top-0 size-full z-0">
