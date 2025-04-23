@@ -73,37 +73,39 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="max-w-lg mx-auto bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-lg shadow-lg"
         >
-          <div className="mb-4">
-            <label htmlFor="first_name" className="block text-blue-100 font-robert-regular mb-2">
-              First Name
-            </label>
-            <input
-              type="text"
-              id="first_name"
-              name="first_name"
-              value={form.first_name}
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
-            />
-            {errors.first_name && (
-              <p className="text-red-500 text-sm mt-1">{errors.first_name}</p>
-            )}
-          </div>
-          <div className="mb-4">
-            <label htmlFor="Last_name" className="block text-blue-100 font-robert-regular mb-2">
-              Last Name
-            </label>
-            <input
-              type="text"
-              id="last_name"
-              name="last_name"
-              value={form.last_name}
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-blue-200 text-blue-900 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
-            />
-            {errors.last_name && (
-              <p className="text-red-500 text-sm mt-1">{errors.last_name}</p>
-            )}
+          <div className="flex flex-col sm:flex-row sm:gap-4 mb-4">
+            <div className="sm:w-1/2">
+              <label htmlFor="first_name" className="block text-blue-100 font-robert-regular mb-2">
+                First Name
+              </label>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                value={form.first_name}
+                onChange={handleChange}
+                className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+              />
+              {errors.first_name && (
+                <p className="text-red-500 text-sm mt-1">{errors.first_name}</p>
+              )}
+            </div>
+            <div className="sm:w-1/2">
+              <label htmlFor="last_name" className="block text-blue-100 font-robert-regular mb-2">
+                Last Name
+              </label>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                value={form.last_name}
+                onChange={handleChange}
+                className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+              />
+              {errors.last_name && (
+                <p className="text-red-500 text-sm mt-1">{errors.last_name}</p>
+              )}
+            </div>
           </div>
           <div className="mb-4">
             <label htmlFor="email" className="block text-blue-100 font-robert-regular mb-2">
