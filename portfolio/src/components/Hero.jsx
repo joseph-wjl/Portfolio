@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, Suspense, lazy } from "react";
 // import Spline from "@splinetool/react-spline"; 
 import Button from "./Button";
 import { ScrollTrigger } from "gsap/all";
-import Tesserat from "./models/Tesserat";
+// import Tesserat from "./models/Tesserat";
 
 gsap.registerPlugin(ScrollTrigger);
 

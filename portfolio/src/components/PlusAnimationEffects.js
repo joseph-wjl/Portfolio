@@ -1,7 +1,6 @@
 import gsap from 'gsap';
 import Lenis from '@studio-freight/lenis';
 import { ScrollTrigger } from 'gsap/all';
-import { Scroll } from '@react-three/drei';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,7 +8,7 @@ export default function PlusAnimationEffects() {
 
 const lenis = new Lenis();
 
-lenis.om("scroll", ScrollTrigger.update);
+lenis.on("scroll", ScrollTrigger.update);
 
 gsap.ticker.add((time) => {
     lenis.raf(time * 1000);

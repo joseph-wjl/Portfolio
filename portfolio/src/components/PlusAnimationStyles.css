@@ -1,3 +1,47 @@
+.header-row h1 {
+    text-transform: uppercase;
+    font-size: 200px;
+    font-weight: 400;
+    letter-spacing: -4px;
+}
+
+section .hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #fff;
+}
+
+.info {
+    width: 100vw;
+    height: 150vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-row {
+    width: 100%;
+    height: 250px;
+    padding: 0 2em;
+}
+
+.header-row:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-row:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .header-info {
     position: relative;
     width: 100%;
