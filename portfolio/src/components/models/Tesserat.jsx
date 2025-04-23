@@ -8,7 +8,9 @@ export default function Tesserat() {
         <ambientLight intensity={0.2} color="#1a1a40" />
         <directionalLight position={[5, 5, 5]} intensity={1} color="#ffffff" />
 
-        <OrbitControls />
+        <OrbitControls
+            enablePan = {false}
+        />
 
         <mesh>
             <boxGeometry args={[1, 1, 1]} />
