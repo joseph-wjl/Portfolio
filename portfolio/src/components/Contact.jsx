@@ -71,68 +71,44 @@ export default function Contact() {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="max-w-lg mx-auto bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-lg shadow-lg"
+          className="max-w-3xl mx-auto p-8"
         >
-          <div className="mb-4">
-            <label htmlFor="first_name" className="block text-blue-100 font-robert-regular mb-2">
-              First Name
-            </label>
-            <input
-              type="text"
-              id="first_name"
-              name="first_name"
-              value={form.first_name}
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
-            />
-            {errors.first_name && (
-              <p className="text-red-500 text-sm mt-1">{errors.first_name}</p>
-            )}
+
+
+          <div className="flex flex-wrap gap-4 mb-4">
+            <div className="flex-1">
+              <label htmlFor="first_name" className="block text-blue-100 font-robert-regular mb-2">
+                First Name
+              </label>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder='Enter Your Name'
+                value={form.first_name}
+                onChange={handleChange}
+                className="w-full p-3 border-b-2 bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none"
+              />
+              {errors.first_name && (
+                <p className="text-red-500 text-sm mt-1">{errors.first_name}</p>
+              )}
+            </div>
+            <div className="flex-1">
+              <label htmlFor="email" className="block text-blue-100 font-robert-regular mb-2">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder='Enter Your Email Address'
+                value={form.email}
+                onChange={handleChange}
+                className="w-full p-3 border-b-2 bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none"
+              />
+              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            </div>
           </div>
-          {/* <div className="mb-4">
-            <label htmlFor="Last_name" className="block text-blue-100 font-robert-regular mb-2">
-              Last Name
-            </label>
-            <input
-              type="text"
-              id="last_name"
-              name="last_name"
-              value={form.last_name}
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-blue-200 text-blue-900 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
-            />
-            {errors.last_name && (
-              <p className="text-red-500 text-sm mt-1">{errors.last_name}</p>
-            )}
-          </div> */}
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-blue-100 font-robert-regular mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
-            />
-            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
-          </div>
-          {/* <div className="mb-4">
-            <label htmlFor="subject" className="block text-blue-100 font-robert-regular mb-2">
-              Subject
-            </label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              value={form.subject}
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
-            />
-            {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
-          </div> */}
           <div className="mb-4">
             <label htmlFor="message" className="block text-blue-100 font-robert-regular mb-2">
               Message
@@ -142,8 +118,9 @@ export default function Contact() {
               name="message"
               value={form.message}
               onChange={handleChange}
-              className="w-full p-3 rounded bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-yellow-300 resize-vertical resize-none"
-              rows="5"
+              placeholder="Got a question or a project idea? Let me know!"
+              className="w-full p-3 border-b-2 bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none resize-none"
+              rows="4"
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
           </div>
