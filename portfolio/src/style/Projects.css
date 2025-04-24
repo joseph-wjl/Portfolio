@@ -49,9 +49,10 @@
 .card-content p {
     text-align: left;
     color: #000;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.25;
+    padding: 0 1em;
 }
 
 .step-counter {
