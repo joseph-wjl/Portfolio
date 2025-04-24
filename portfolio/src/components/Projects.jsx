@@ -33,7 +33,7 @@ export default function Projects() {
                         <img src="/img/altruism-img.JPG" className="project-img cursor-pointer" alt="Project" />
                     </div>
                     <div className="card-content">
-                        <p>Card description</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias harum, pariatur mollitia rem enim ex!</p>
                     </div>
                 </div>
             </a>

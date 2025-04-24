@@ -52,16 +52,16 @@ export default function Hero() {
         <div className="absolute left-0 top-0 size-full z-0">
           {/* <Suspense fallback={<div>Loading...</div>}>
               <Spline
-                scene="https://prod.spline.design/3ArfHPRWmgJbL5vN/scene.splinecode"
+                scene="https://prod.spline.design/FY-1Ma71iKrhvppj/scene.splinecode"
                 className="w-full h-full object-cover"
               />
             </Suspense> */}
 
-            <figure>
+            {/* <figure>
               <div>
                 <Tesseract />
               </div>
-            </figure>
+            </figure> */}
 
         </div>
         {/* Overlay for Readability */}
