@@ -7,8 +7,7 @@ import FloatingEmail from './FloatingEmail';
 export default function Contact() {
   const formRef = useRef();
   const [form, setForm] = useState({
-    first_name: '',
-    last_name: '',
+    name: '',
     email: '',
     subject: '',
     message: '',
@@ -25,11 +24,9 @@ export default function Contact() {
 
   const validateForm = () => {
     const newErrors = {};
-    if (!form.first_name.trim()) newErrors.first_name = 'First name is required';
-    if (!form.last_name.trim()) newErrors.last_name = 'Last name is required';
+    if (!form.name.trim()) newErrors.name = 'Name is required';
     if (!form.email.trim()) newErrors.email = 'Email is required';
     else if (!/\S+@\S+\.\S+/.test(form.email)) newErrors.email = 'Email is invalid';
-    if (!form.subject.trim()) newErrors.subject = 'Subject is required';
     if (!form.message.trim()) newErrors.message = 'Message is required';
     return newErrors;
   };
@@ -52,7 +49,7 @@ export default function Contact() {
       .then(
         () => {
           setStatus('success');
-          setForm({ first_name: '', last_name: '', email: '', subject: '', message: '' });
+          setForm({ name: '', email: '', subject: '', message: '' });
           setTimeout(() => setStatus(''), 3000);
         },
         (error) => {
@@ -77,24 +74,22 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="max-w-3xl mx-auto p-8"
         >
-
-
           <div className="flex flex-wrap gap-4 mb-4">
             <div className="flex-1">
-              <label htmlFor="first_name" className="block text-blue-100 font-robert-regular mb-2">
-                First Name
+              <label htmlFor="name" className="block text-blue-100 font-robert-regular mb-2">
+                Name
               </label>
               <input
                 type="text"
-                id="first_name"
-                name="first_name"
+                id="name"
+                name="name"
                 placeholder='Enter Your Name'
-                value={form.first_name}
+                value={form.name}
                 onChange={handleChange}
                 className="w-full p-3 border-b-2 bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none"
               />
-              {errors.first_name && (
-                <p className="text-red-500 text-sm mt-1">{errors.first_name}</p>
+              {errors.name && (
+                <p className="text-red-500 text-sm mt-1">{errors.name}</p>
               )}
             </div>
             <div className="flex-1">
@@ -122,7 +117,7 @@ export default function Contact() {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="Got a question or a project idea? Let me know!"
+              placeholder="Got a question or a project idea? Let's talk!"
               className="w-full p-3 border-b-2 bg-blue-200 text-blue-100 placeholder-blue-100 focus:outline-none resize-none"
               rows="4"
             ></textarea>
