@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { TiLocationArrow } from 'react-icons/ti';
 import Button from './Button';
+import FloatingEmail from './FloatingEmail';
 
 export default function Contact() {
   const formRef = useRef();
@@ -64,6 +65,9 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative w-full min-h-screen bg-blue-200 flex items-center justify-center py-16">
+      
+      <FloatingEmail />
+
       <div className="container mx-auto px-5 sm:px-10">
         <h2 className="special-font text-4xl sm:text-5xl font-bold text-blue-100 mb-8 text-center">
           Get In Touch
