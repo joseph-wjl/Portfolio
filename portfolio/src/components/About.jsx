@@ -39,7 +39,20 @@ export default function About() {
             className="text-black"/>
 
             <div className="about-subtext">
-                <p>text filler text filler</p>
+                <p>Hi, I’m Joseph, an aspiring web developer with a passion for crafting 
+                    websites that are as beautiful as they are functional. As a self-taught developer, 
+                    I’m on a journey of constant learning, diving into new technologies to bring my creative 
+                    visions to life. My artistic roots drive me to prioritize design and aesthetics, blending 
+                    them seamlessly with solid functionality to create digital experiences that stand out.</p>
+                <p>I believe that great web development is about more than just code—it’s about telling a story 
+                    through thoughtful design and intuitive user experiences. Whether it’s a sleek layout, a 
+                    responsive interface, or a perfect balance of form and function, I’m dedicated to making 
+                    every project I tackle both visually captivating and technically sound.</p>
+                <p>When I’m not behind the screen, I’m usually out in the world that inspires me—hiking through 
+                    rugged trails, camping under a starry sky, or soaking up the sun at the beach. Photography is 
+                    my way of capturing those moments, while fitness keeps me energized and pushing my limits. These 
+                    passions fuel my creativity and shape my approach to building web experiences that feel alive, 
+                    dynamic, and connected to the user.</p>
             </div>
         </div>
         <div className="h-dvh w-screen" id="clip">
