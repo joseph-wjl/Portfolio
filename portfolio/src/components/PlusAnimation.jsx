@@ -5,7 +5,7 @@ import './PlusAnimationEffects.js'
 export default function PlusAnimation() {
   return (
     <>
-        <div id="container">
+        <div id="container" className="container">
             <section className="hero">
                 <h1>Symphonia</h1>
             </section>

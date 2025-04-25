@@ -5,7 +5,6 @@ import { ScrollTrigger } from 'gsap/all';
 import AnimatedTitle from './AnimatedTitle';
 import Spline from '@splinetool/react-spline';
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
@@ -57,8 +56,9 @@ export default function About() {
         </div>
         <div className="h-dvh w-screen" id="clip">
             <div className="mask-clip-path about-image">
-                <img src="img/ui.jpeg" alt="Background" 
+                <img src="img/x.img.jpg" alt="Background" 
                 className="absolute left-0 top-0 size-full object-cover"></img>
+                
                 {/* <Spline scene="https://prod.spline.design/3ArfHPRWmgJbL5vN/scene.splinecode" 
                 className="absolute left-0 top-0 size-full object-cover"/> */}
             </div>

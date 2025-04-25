@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './ImageRevealStyles.css'
-import './ImageRevealEffects.js'
+import ImageRevealEffects from './ImageRevealEffects.js'
 
 export default function ImageReveal() {
 
@@ -29,7 +29,7 @@ export default function ImageReveal() {
             <div className="img-holder">
                 <img src="/img/ui.jpeg"></img>
             </div>
-            <div className="content-h">
+            <div className="content-holder">
                 <div className="row">
                     <h1>History</h1>
                 </div>

@@ -18,10 +18,8 @@ export default function App() {
         <Tesseract />
       </section>
       {/* <SplineComponent /> */}
-      {/* <PlusAnimation /> */}
-      <section className="z-0 min-h-screen bg-blue-100" />
+      {/* <section className="z-0 min-h-screen bg-blue-100" /> */}
       <About />
-      {/* <ImageReveal /> */}
       <Projects />
       <Contact />
       <Footer />
