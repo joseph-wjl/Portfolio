@@ -32,7 +32,7 @@ export default function Projects() {
                     <div className="card-img">
                         <img src="/img/portfolio.JPG" className="project-img" alt="Project" />
                     </div>
-                    <div className="card-content">
+                    <div className="card-content font-robert-regular">
                         <p>A dynamic personal portfolio showcasing my journey as a self-taught web developer. Built with React and Tailwind CSS 
                             for a sleek, responsive design, it features immersive 3D visuals powered by Three.js and smooth animations via GSAP. 
                             My artistic passion shines through in the carefully crafted UI, blending aesthetics with seamless functionality to 
@@ -45,7 +45,7 @@ export default function Projects() {
                     <div className="card-img">
                         <img src="/img/altruism-img.JPG" className="project-img cursor-pointer" alt="Project" />
                     </div>
-                    <div className="card-content">
+                    <div className="card-content font-robert-regular">
                         <p>A real-world web application developed for a Chinese medicine clinic - Altruism Healthcare, designed to streamline 
                             patient interactions and showcase services. Built with React and React Router for seamless 
                             navigation, and styled with custom CSS for a clean, professional aesthetic. 
@@ -59,7 +59,7 @@ export default function Projects() {
                     <div className="card-img">
                         <img src="/img/eatout-img.JPG" className="project-img" alt="Project" />
                     </div>
-                    <div className="card-content">
+                    <div className="card-content font-robert-regular">
                         <p>An early-stage personal project born from my passion for fitness, Eat Out is a mobile-first responsive web app for  
                             fitness enthusiasts to track calories and macros while dining out. Built with vanilla JavaScript and CSS, it features a 
                             user-friendly interface for browsing and filtering restaurant menu data. Designed with both aesthetics and usability in mind, 
