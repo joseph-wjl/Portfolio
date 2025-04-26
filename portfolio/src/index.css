@@ -152,6 +152,12 @@ body {
   animation-delay: calc(var(--animation-order) * 0.1s);
 }
 
+.about-text {
+  width: 100%;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
 .card:hover {
   transform: scale(2);
   background-color: red;
