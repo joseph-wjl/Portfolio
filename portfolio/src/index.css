@@ -152,6 +152,15 @@ body {
   animation-delay: calc(var(--animation-order) * 0.1s);
 }
 
+.pill {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+
 @keyframes indicator-line {
   0% {
     height: 4px;

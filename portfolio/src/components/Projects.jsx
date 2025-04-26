@@ -27,12 +27,16 @@ export default function Projects() {
         </div>
         
         <div className="cards">
-            <a href="https://eatout-hk.netlify.app/" target="_blank">
+            <a href="" target="_blank">
                 <div className="card cursor-pointer">
                     <div className="card-img">
                         <img src="/img/portfolio.JPG" className="project-img" alt="Screenshot of project - Portfiolio" />
                     </div>
                     <div className="card-content font-robert-regular">
+                        <span className="pill">React.js</span>
+                        <span className="pill">Tailwind CSS</span>
+                        <span className="pill">Three.js</span>
+                        <span className="pill">GSAP</span>
                         <p>A dynamic personal portfolio showcasing my journey as a self-taught web developer. Built with React and Tailwind CSS 
                             for a sleek, responsive design, it features immersive 3D visuals powered by Three.js and smooth animations via GSAP. 
                             My artistic passion shines through in the carefully crafted UI, blending aesthetics with seamless functionality to 
