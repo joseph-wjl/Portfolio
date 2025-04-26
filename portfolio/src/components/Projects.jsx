@@ -50,6 +50,10 @@ export default function Projects() {
                         <img src="/img/altruism-img.JPG" className="project-img cursor-pointer" alt="Screenshot of project - Altruism" />
                     </div>
                     <div className="card-content font-robert-regular">
+                        <span className="pill">React.js</span>
+                        <span className="pill">React Router</span>
+                        <span className="pill">Bootstrap</span>
+                        <span className="pill">CSS</span>
                         <p>A real-world web application developed for a Chinese medicine clinic — Altruism Healthcare, designed to streamline 
                             patient interactions and showcase services. Built with React and React Router for seamless 
                             navigation, and styled with custom CSS for a clean, professional aesthetic. 
@@ -64,6 +68,8 @@ export default function Projects() {
                         <img src="/img/eatout-img.JPG" className="project-img" alt="Screenshot of project - Eat Out" />
                     </div>
                     <div className="card-content font-robert-regular">
+                        <span className="pill">JavaScript</span>
+                        <span className="pill">CSS</span>
                         <p>An early-stage personal project born from my passion for fitness, Eat Out is a mobile-first responsive web app for  
                             fitness enthusiasts to track calories and macros while dining out. Built with vanilla JavaScript and CSS, it features a 
                             user-friendly interface for browsing and filtering restaurant menu data. Designed with both aesthetics and usability in mind, 
