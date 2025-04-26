@@ -15,6 +15,7 @@ export default function About() {
                 trigger: '#clip',
                 start: 'center center',
                 end: '+=800 center',
+                ease: "power2.inOut",
                 scrub: 0.5,
                 pin: true,
                 pinSpacing: true,
@@ -38,7 +39,7 @@ export default function About() {
             className="text-black"/>
 
             <div className="about-subtext">
-                <p>Hi, I’m Joseph, an aspiring web developer with a passion for crafting 
+                {/* <p>Hi, I’m Joseph, an aspiring web developer with a passion for crafting 
                     websites that are as beautiful as they are functional. As a self-taught developer, 
                     I’m on a journey of constant learning, diving into new technologies to bring my creative 
                     visions to life. My artistic roots drive me to prioritize design and aesthetics, blending 
@@ -51,7 +52,8 @@ export default function About() {
                     rugged trails, camping under a starry sky, or soaking up the sun at the beach. Photography is 
                     my way of capturing those moments, while fitness keeps me energized and pushing my limits. These 
                     passions fuel my creativity and shape my approach to building web experiences that feel alive, 
-                    dynamic, and connected to the user.</p>
+                    dynamic, and connected to the user.</p> */}
+                <h2 className="text-3xl">Take a deeper dive into my works</h2>
             </div>
         </div>
         <div className="h-dvh w-screen" id="clip">
