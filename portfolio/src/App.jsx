@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
+import Immerse from "./components/Immerse";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import PlusAnimation from "./components/PlusAnimation";
@@ -19,7 +19,7 @@ export default function App() {
       </section>
       {/* <SplineComponent /> */}
       {/* <section className="z-0 min-h-screen bg-blue-100" /> */}
-      <About />
+      <Immerse />
       <Projects />
       <Contact />
       <Footer />
