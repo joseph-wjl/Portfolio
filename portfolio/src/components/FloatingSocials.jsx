@@ -8,7 +8,7 @@ export default function FloatingSocials() {
     <>
 
         <div className="fixed right-0 top-1/2 flex flex-col gap-3 transform -translate-y-1/2 translate-x-0.5  
-            bg-black text-white text-sm font-bold py-1 px-2 rounded shadow-lg ">
+           mr-2 bg-black text-white text-sm font-bold py-3 px-2 rounded-full shadow-lg">
             
             <a href="https://linkedin.com/in/joseph-wjl" target="_blank">
                 <FaLinkedin className="cursor-pointer text-2xl" />

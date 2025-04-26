@@ -5,7 +5,7 @@ import gsap from 'gsap';
 export default function Navbar() {
     const navContainerRef = useRef(null);
 
-    const navItems = ['Home', 'About Me', 'Projects', 'Resume', 'Contact'];
+    const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact'];
 
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isNavVisible, setIsNavVisible] = useState(true);
