@@ -11,13 +11,13 @@ export default function FloatingSocials() {
            mr-2 bg-black text-white font-bold py-3 px-2 rounded-full shadow-lg">
             
             <a href="https://linkedin.com/in/joseph-wjl" target="_blank">
-                <FaLinkedin className="cursor-pointer text-xl" />
+                <FaLinkedin className="cursor-pointer text-xl hover:text-gray-400 transition duration-500" />
             </a>
             <a href="https://github.com/joseph-wjl" target="_blank">
-                <FaGithub className="cursor-pointer text-xl"/>
+                <FaGithub className="cursor-pointer text-xl hover:text-gray-400 transition duration-500"/>
             </a>
             <a href="mailto:jlau.dev@gmail.com">
-                <MdEmail className="cursor-pointer text-xl"/>
+                <MdEmail className="cursor-pointer text-xl hover:text-gray-400 transition duration-500"/>
             </a>
         </div>
         

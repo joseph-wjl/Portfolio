@@ -33,7 +33,7 @@ export default function Projects() {
                         <img src="/img/portfolio.JPG" className="project-img" alt="Screenshot of project - Portfiolio" />
                     </div>
                     <div className="card-content font-robert-regular">
-                        <span className="pill">React.js</span>
+                        <span className="pill">React</span>
                         <span className="pill">Tailwind CSS</span>
                         <span className="pill">Three.js</span>
                         <span className="pill">GSAP</span>
@@ -50,7 +50,7 @@ export default function Projects() {
                         <img src="/img/altruism-img.JPG" className="project-img cursor-pointer" alt="Screenshot of project - Altruism" />
                     </div>
                     <div className="card-content font-robert-regular">
-                        <span className="pill">React.js</span>
+                        <span className="pill">React</span>
                         <span className="pill">React Router</span>
                         <span className="pill">Bootstrap</span>
                         <span className="pill">CSS</span>
