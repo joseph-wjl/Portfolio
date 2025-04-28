@@ -8,7 +8,7 @@ export default function Footer() {
             <a
             href="mailto:jlau.dev@gmail.com"
             className=" 
-             font-robert-regular text-black text-sm font-bold py-1 px-2 rounded shadow-lg"
+             font-robert-regular text-black text-sm font-bold py-1 px-2 rounded border-b-2 border-blue-100 shadow-lg"
             >
                 jlau.dev@gmail.com
             </a>

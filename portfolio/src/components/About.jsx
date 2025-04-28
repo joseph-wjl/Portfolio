@@ -3,7 +3,7 @@ import Tesseract from './models/Tesseract'
 
 export default function About() {
   return (
-    <div className="relative h-dvh w-screen overflow-x-hidden flex items-center justify-center bg-yellow-300">
+    <div className="relative h-dvh w-screen overflow-x-hidden flex items-center justify-center bg-blue-100">
        
        <div className="about-text flex flex-col h-dvh justify-center font-robert-regular">
             <p className="py-10 pl-10">

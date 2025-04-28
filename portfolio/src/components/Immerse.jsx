@@ -30,7 +30,7 @@ export default function Immerse() {
     })
 
   return (
-    <div id="immerse" className="min-h-screen w-screen bg-yellow-300">
+    <div id="immerse" className="min-h-screen w-screen bg-blue-300">
         <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
             <h2 className="font-general text-sm uppercase md:text-[10px]">
                 About Me</h2>
