@@ -28,7 +28,7 @@
     flex-direction: column;
     gap: 1em;
     will-change: transform;
-    background-color: white;
+    background-color: #5724ff;
 }
 
 .card-img {
@@ -85,7 +85,7 @@
 .step-counter h1 {
     width: 100%;
     position: relative;
-    color: #fff;
+    color: #411bbf;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 150px;

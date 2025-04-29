@@ -30,13 +30,16 @@ export default function Immerse() {
     })
 
   return (
-    <div id="immerse" className="min-h-screen w-screen bg-blue-300">
+    <div id="immerse" className="min-h-screen w-screen ">
         <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
-            <h2 className="font-general text-sm uppercase md:text-[10px]">
-                About Me</h2>
+            {/* <h2 className="font-general text-sm uppercase md:text-[10px]">
+                About Me</h2> */}
             
-            <AnimatedTitle title="I build stunning & user-friendly interfaces" containerClass="mt-5 text-black text-center"
+            <AnimatedTitle title="Take a deeper dive into my works" containerClass="mb-10 text-black text-center"
             className="text-black"/>
+
+            {/* <AnimatedTitle title="I build stunning & user-friendly interfaces" containerClass="mt-10 mb-5 text-black text-center font-robert-medium"
+            className="text-black"/> */}
 
             <div className="immerse-subtext">
                 {/* <p>Hi, I’m Joseph, an aspiring web developer with a passion for crafting 
@@ -53,7 +56,7 @@ export default function Immerse() {
                     my way of capturing those moments, while fitness keeps me energized and pushing my limits. These 
                     passions fuel my creativity and shape my approach to building web experiences that feel alive, 
                     dynamic, and connected to the user.</p> */}
-                <h2 className="text-3xl">Take a deeper dive into my works</h2>
+                {/* <h2 className="text-3xl font-robert-medium font-bold">Take a deeper dive into my works</h2> */}
             </div>
         </div>
         <div className="h-dvh w-screen" id="clip">
