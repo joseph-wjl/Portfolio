@@ -12,6 +12,11 @@ body {
   font-family: "General Sans", sans-serif;
 }
 
+::selection {
+  background-color: #5724ff; 
+  color: black;
+}
+
 @layer base {
   @font-face {
     font-family: "circular-web";
