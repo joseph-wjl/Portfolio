@@ -82,7 +82,7 @@ export default function Hero() {
               id="watch-trailer"
               title="Learn More"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-blue-300 flex-center gap-1"
+              containerClass="bg-violet-300 flex-center gap-1"
               onClick={() => {
                 const aboutMeSection = document.getElementById("about");
                 if (aboutMeSection) {
