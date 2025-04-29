@@ -61,7 +61,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative w-full min-h-screen bg-grey-950 flex items-center justify-center py-16">
+    <section id="contact" className="relative w-full min-h-screen bg-grey-1000 flex items-center justify-center py-16">
       
       <FloatingSocials />
 
@@ -86,7 +86,7 @@ export default function Contact() {
                 placeholder='Enter Your Name'
                 value={form.name}
                 onChange={handleChange}
-                className="w-full p-3 border-b-2 bg-grey-950 text-blue-100 placeholder-blue-100 focus:outline-none"
+                className="w-full p-3 border-b-2 bg-grey-1000 text-blue-100 placeholder-blue-100 focus:outline-none"
               />
               {errors.name && (
                 <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -103,7 +103,7 @@ export default function Contact() {
                 placeholder='Enter Your Email Address'
                 value={form.email}
                 onChange={handleChange}
-                className="w-full p-3 border-b-2 bg-grey-950 text-blue-100 placeholder-blue-100 focus:outline-none"
+                className="w-full p-3 border-b-2 bg-grey-1000 text-blue-100 placeholder-blue-100 focus:outline-none"
               />
               {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
             </div>
@@ -118,7 +118,7 @@ export default function Contact() {
               value={form.message}
               onChange={handleChange}
               placeholder="Got a question or a project idea? Let's talk!"
-              className="w-full p-3 border-b-2 bg-grey-950 text-blue-100 placeholder-blue-100 focus:outline-none resize-none"
+              className="w-full p-3 border-b-2 bg-grey-1000 text-blue-100 placeholder-blue-100 focus:outline-none resize-none"
               rows="4"
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}

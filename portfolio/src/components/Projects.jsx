@@ -80,7 +80,6 @@ export default function Projects() {
             </a>   
             <div className="card cursor-pointer">
                 <div className="card-img">
-                    <img src="" className="project-img" alt="Screenshot of project" />
                 </div>
                 <div className="card-content">
                     <p>Coming soon</p>

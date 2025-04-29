@@ -37,8 +37,8 @@ export default function Immerse() {
             {/* <h2 className="font-general text-sm uppercase md:text-[10px]">
                 About Me</h2> */}
             
-            <AnimatedTitle title="Take a deeper dive into my works" containerClass="mb-10 text-black text-center"
-            className="text-blue-100"/>
+            <AnimatedTitle title="Take a deeper dive into my works" containerClass="mb-10 text-center"
+            className="text-violet-300"/>
 
             {/* <AnimatedTitle title="I build stunning & user-friendly interfaces" containerClass="mt-10 mb-5 text-black text-center font-robert-medium"
             className="text-black"/> */}
