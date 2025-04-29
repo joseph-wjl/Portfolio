@@ -10,7 +10,7 @@ export default function Button({ id, title, rightIcon, leftIcon, containerClass 
     >
       {leftIcon}
 
-      <span className="relative inline-flex overflow-hidden font-robert-regular text-xs uppercase">
+      <span className="relative inline-flex overflow-hidden font-robert-medium text-xs uppercase">
         <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:translate-y-[-160%] group-hover:skew-y-12">
           {title}
         </div>

@@ -128,7 +128,7 @@ export default function Contact() {
               type="submit"
               title="Send Message"
               leftIcon={<TiLocationArrow />}
-              containerClass="font-robert-regular bg-blue-100 flex-center gap-1 text-black hover:bg-blue-300 transition"
+              containerClass="font-robert-regular bg-yellow-400 flex-center gap-1 text-black hover:bg-blue-300 transition"
             />
           </div>
           {status === 'success' && (

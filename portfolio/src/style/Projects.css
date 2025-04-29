@@ -28,7 +28,7 @@
     flex-direction: column;
     gap: 1em;
     will-change: transform;
-    background-color: #5724ff;
+    background-color: #ccff24;
 }
 
 .card-img {
@@ -49,10 +49,11 @@
 .card-content p {
     text-align: left;
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 1.25;
-    padding: 0 1em;
+    line-height: 1.5;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
 }
 
 .step-counter {
@@ -92,6 +93,10 @@
     line-height: 1;
     letter-spacing: -0.04em;
     will-change: transform;
+}
+
+#projects-text {
+    color: #ccff24;
 }
 
 .empty {

@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="steps">
         <div className="step-counter">
             <div className="counter-title">
-            <h1 className="bg-black z-10">Projects</h1>
+            <h1 className="bg-black z-10" id="projects-text">Projects</h1>
             </div>
             <div className="count">
             <div className="count-container">
@@ -35,6 +35,7 @@ export default function Projects() {
                     <div className="card-content font-robert-regular">
                         <span className="pill">React</span>
                         <span className="pill">Tailwind CSS</span>
+                        <span className="pill">CSS</span>
                         <span className="pill">Three.js</span>
                         <span className="pill">GSAP</span>
                         <p>A dynamic personal portfolio showcasing my journey as a self-taught web developer. Built with React and Tailwind CSS 
