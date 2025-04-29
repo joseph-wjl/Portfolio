@@ -36,7 +36,7 @@ export default function Hero() {
   });
 
   return (
-    <div id="home" className="relative h-dvh w-screen overflow-x-hidden bg-yellow-300">
+    <div id="home" className="relative h-dvh w-screen overflow-x-hidden bg-violet-300">
       {/* 3D Background */}
       {/* <div id="video-frame" className="absolute inset-0 z-0">
         <Suspense fallback={<div>Loading...</div>}>

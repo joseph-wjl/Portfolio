@@ -4,11 +4,11 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <div className="flex justify-center h-20 items-center gap-4">
+        <div className="flex justify-center h-20 items-center gap-4 bg-violet-950">
             <a
             href="mailto:jlau.dev@gmail.com"
             className=" 
-             font-robert-regular text-black text-sm font-bold py-1 px-2 rounded border-b-2 border-blue-100 shadow-lg"
+             font-robert-regular text-blue-100 text-sm font-bold"
             >
                 jlau.dev@gmail.com
             </a>
