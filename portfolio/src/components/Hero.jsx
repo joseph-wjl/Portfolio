@@ -62,7 +62,7 @@ export default function Hero() {
                 <Tesseract />
               </div>
             </figure> */}
-            <video src="./img/chips.mp4" autoPlay loop muted></video>
+            <video src="/videos/chips.mp4" autoPlay loop muted></video>
 
         </div>
         {/* Overlay for Readability */}

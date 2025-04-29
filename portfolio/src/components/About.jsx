@@ -1,6 +1,5 @@
 import React from 'react'
 import Tesseract from './models/Tesseract'
-import '/public/videos/particles.mp4'
 
 export default function About() {
   return (

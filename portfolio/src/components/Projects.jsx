@@ -48,7 +48,7 @@ export default function Projects() {
             <a href="https://altruism-hk.netlify.app/" target="_blank">
                 <div className="card cursor-pointer">
                     <div className="card-img">
-                        <img src="/img/altruism-img.JPG" className="project-img cursor-pointer" alt="Screenshot of project - Altruism" />
+                        <img src="/img/altruism.JPG" className="project-img cursor-pointer" alt="Screenshot of project - Altruism" />
                     </div>
                     <div className="card-content font-robert-regular">
                         <span className="pill">React</span>
@@ -66,7 +66,7 @@ export default function Projects() {
             <a href="https://eatout-hk.netlify.app/" target="_blank">
                 <div className="card cursor-pointer">
                     <div className="card-img">
-                        <img src="/img/eatout-img.JPG" className="project-img" alt="Screenshot of project - Eat Out" />
+                        <img src="/img/eatout.JPG" className="project-img" alt="Screenshot of project - Eat Out" />
                     </div>
                     <div className="card-content font-robert-regular">
                         <span className="pill">JavaScript</span>
