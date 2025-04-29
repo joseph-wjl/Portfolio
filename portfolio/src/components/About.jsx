@@ -1,28 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Tesseract from './models/Tesseract'
 
 export default function About() {
 
   // Text animation
+  useEffect(() => {
+    // Initialize IntersectionObserver
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-          if(entry.isIntersecting){
-              entry.target.classList.add('animated-text-show');
-          } else {
-              entry.target.classList.remove('animated-text-show');
-          }
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated-text-show');
+        } else {
+          entry.target.classList.remove('animated-text-show');
+        }
       });
     });
 
+    // Select elements to observe
     const hiddenElements = document.querySelectorAll('.animated-text-hidden');
     hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup observer on component unmount
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden flex items-center justify-center ">
 
         <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/public/videos/particles.mp4"
+        src="/videos/particles.mp4"
         autoPlay
         loop
         muted

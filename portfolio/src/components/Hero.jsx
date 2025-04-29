@@ -93,8 +93,8 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <h1 className="absolute bottom-5 right-5 text-6xl font-zentry text-white">
-        I am a Front End Developer.
+      <h1 className="absolute bottom-5 right-5 text-6xl mr-5 font-zentry text-white">
+        I am a Front End Developer
       </h1>
     </div>
   );
