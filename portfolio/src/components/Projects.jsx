@@ -18,7 +18,7 @@ export default function Projects() {
             <div className="count">
             <div className="count-container">
                 <h1>Portfolio</h1>
-                <h1>Altruism Healthcare</h1>
+                <h1>Altruism</h1>
                 <h1>Eat Out</h1>
                 <h1>Coming Soon</h1>
                 <h1>Coming Soon</h1>

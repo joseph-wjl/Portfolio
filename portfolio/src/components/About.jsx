@@ -13,7 +13,7 @@ export default function About() {
         muted
         ></video>
        
-       <div className="about-text flex flex-col h-dvh mt-10 justify-center font-robert-regular text-lg">
+       <div className="about-text flex flex-col h-dvh mt-10 justify-center font-robert-regular text-md">
             <p className="py-7 pl-10 font-inter">
                 I am an aspiring web developer with a passion for crafting 
                 websites that are as beautiful as they are functional. As a self-taught developer, 
