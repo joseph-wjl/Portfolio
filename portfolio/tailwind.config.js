@@ -9,6 +9,8 @@ export default {
         "circular-web": ["circular-web", "sans-serif"],
         "robert-medium": ["robert-medium", "sans-serif"],
         "robert-regular": ["robert-regular", "sans-serif"],
+        inter: ['Inter', 'sans-serif'],
+        noto: ['Noto Sans', 'sans-serif'],
       },
       colors: {
         blue: {

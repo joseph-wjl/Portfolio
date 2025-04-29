@@ -15,7 +15,7 @@ export default function About() {
         ></video>
        
        <div className="about-text flex flex-col h-dvh mt-10 justify-center font-robert-regular text-lg">
-            <p className="py-7 pl-10">
+            <p className="py-7 pl-10 font-inter">
                 I am an aspiring web developer with a passion for crafting 
                 websites that are as beautiful as they are functional. As a self-taught developer, 
                 I’m on a journey of constant learning, diving into new technologies to bring my creative 

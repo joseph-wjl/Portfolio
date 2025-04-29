@@ -73,7 +73,7 @@ export default function Projects() {
                         <span className="pill">CSS</span>
                         <p>An early-stage personal project born from my passion for fitness, Eat Out is a mobile-first responsive web app for  
                             fitness enthusiasts to track calories and macros while dining out. Built with vanilla JavaScript and CSS, it features a 
-                            user-friendly interface for browsing and filtering restaurant menu data. Designed with both aesthetics and usability in mind, 
+                            user-friendly interface for browsing and filtering restaurant menu data. Designed completely from scratch with both aesthetics and usability in mind, 
                             it empowers users to stay on track with their nutrition goals.</p>
                     </div>
                 </div>
