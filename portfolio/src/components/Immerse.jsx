@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
 import AnimatedTitle from './AnimatedTitle';
-// import '/public/videos/particles.mp4'
+import '/public/videos/particles.mp4'
 import Spline from '@splinetool/react-spline';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -33,14 +33,12 @@ export default function Immerse() {
   return (
     <div id="immerse" className="min-h-screen w-screen ">
 
-        
-
         <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
             {/* <h2 className="font-general text-sm uppercase md:text-[10px]">
                 About Me</h2> */}
             
             <AnimatedTitle title="Take a deeper dive into my works" containerClass="mb-10 text-black text-center"
-            className="text-black"/>
+            className="text-blue-100"/>
 
             {/* <AnimatedTitle title="I build stunning & user-friendly interfaces" containerClass="mt-10 mb-5 text-black text-center font-robert-medium"
             className="text-black"/> */}

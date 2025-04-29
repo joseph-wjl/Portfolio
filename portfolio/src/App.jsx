@@ -7,13 +7,13 @@ import Contact from "./components/Contact";
 import Tesseract from "./components/models/Tesseract";
 import Footer from "./components/Footer";
 import SplineComponent from "./components/SplineComponent";
+import '/public/videos/particles.mp4'
 
 export default function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
       <Navbar />
       <Hero />
-      
       <About />
       {/* <section className="relative h-screen w-full bg-blue-200">
         <Tesseract />

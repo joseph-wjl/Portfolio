@@ -31,6 +31,11 @@
     background-color: #ccff24;
 }
 
+.card:hover {
+    transform: scale(2);
+    background-color: #411bbf;
+  }
+
 .card-img {
     /* flex: 1; */
     /* border-radius: 0.5em; */
@@ -96,6 +101,15 @@
 
 #projects-text {
     color: #ccff24;
+}
+  
+.pill {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 8px;
 }
 
 .empty {

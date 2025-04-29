@@ -1,18 +1,18 @@
 import React from 'react'
-// import '/public/videos/particles.mp4'
 import Tesseract from './models/Tesseract'
+import '/public/videos/particles.mp4'
 
 export default function About() {
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden flex items-center justify-center ">
 
-        {/* <video
+        <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/public/videos/particles.mp4"
         autoPlay
         loop
         muted
-        ></video> */}
+        ></video>
        
        <div className="about-text flex flex-col h-dvh mt-10 justify-center font-robert-regular text-lg">
             <p className="py-7 pl-10">
