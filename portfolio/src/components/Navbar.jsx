@@ -54,13 +54,6 @@ export default function Navbar() {
                               >
                                 {item}
                               </button>
-                            //   <a
-                            //   key={item}
-                            //   href={`#${item.toLowerCase().replace(" ", "-")}`}
-                            //   className="nav-hover-btn"
-                            // >
-                            //   {item}
-                            // </a>
                             ))}
                         </div>
                     </div>
