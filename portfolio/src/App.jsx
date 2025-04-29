@@ -13,6 +13,7 @@ export default function App() {
     <main className="relative min-h-screen w-screen overflow-x-hidden">
       <Navbar />
       <Hero />
+      
       <About />
       {/* <section className="relative h-screen w-full bg-blue-200">
         <Tesseract />
