@@ -78,23 +78,23 @@ export default function Hero() {
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
               I build sleek & stunning websites.
             </p>
-            <Button
-  title="Learn More"
-  leftIcon={<TiLocationArrow />}
-  containerClass="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex-center gap-1"
-  onClick={() => {
-    const nextSection = document.querySelector("#about");
-    if (nextSection) {
-      const sectionTop = nextSection.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: sectionTop,
-        behavior: "smooth",
-      });
-    } else {
-      console.error("The #about section was not found.");
-    }
-  }}
-/>
+            <div className="relative z-50">
+  <Button
+    title="Learn More"
+    leftIcon={<TiLocationArrow />}
+    containerClass="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex-center gap-1"
+    onClick={() => {
+      const nextSection = document.querySelector("#about");
+      if (nextSection) {
+        const sectionTop = nextSection.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: sectionTop,
+          behavior: "smooth",
+        });
+      }
+    }}
+  />
+</div>
           </div>
         </div>
       </div>
