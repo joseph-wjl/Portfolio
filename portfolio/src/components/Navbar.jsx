@@ -45,16 +45,20 @@ export default function Navbar() {
                                 <button
                                 key={item}
                                 onClick={() => {
-                                  const section = document.getElementById(item.toLowerCase().replace(" ", "-"));
-                                  if (section) {
-                                    section.scrollIntoView({ behavior: "smooth" });
-                                  }
-                                }}
-                                className="nav-hover-btn"
-                              >
-                                {item}
-                              </button>
-                            ))}
+                                    if (item === "Resume") {
+                                        window.open("https://drive.google.com/file/d/1q37wgEyRm4NhFEz9iFKqbT1mKTHnfYpC/view?usp=drive_link", "_blank");
+                                      } else {
+                                        const section = document.getElementById(item.toLowerCase().replace(" ", "-"));
+                                        if (section) {
+                                          section.scrollIntoView({ behavior: "smooth" });
+                                        }
+                                      }
+                                    }}
+                                    className="nav-hover-btn"
+                                  >
+                                    {item}
+                                  </button>
+                                ))}
                         </div>
                     </div>
                 </nav>
@@ -63,3 +67,4 @@ export default function Navbar() {
     )
     }
 
+// 
