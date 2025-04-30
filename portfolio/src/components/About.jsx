@@ -27,7 +27,8 @@ export default function About() {
   }, []);
 
   return (
-    <div className="relative h-dvh w-screen overflow-x-hidden flex items-center justify-center ">
+    <div className="relative h-dvh w-screen overflow-x-hidden flex items-center justify-center"
+        id="about">
 
         <video
         className="absolute top-0 left-0 w-full h-full object-cover"

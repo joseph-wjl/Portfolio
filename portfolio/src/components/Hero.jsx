@@ -79,17 +79,22 @@ export default function Hero() {
               I build sleek & stunning websites.
             </p>
             <Button
-              id="watch-trailer"
-              title="Learn More"
-              leftIcon={<TiLocationArrow />}
-              containerClass="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex-center gap-1"
-              onClick={() => {
-                const aboutMeSection = document.getElementById("about");
-                if (aboutMeSection) {
-                  aboutMeSection.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-            />
+  title="Learn More"
+  leftIcon={<TiLocationArrow />}
+  containerClass="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex-center gap-1"
+  onClick={() => {
+    const nextSection = document.querySelector("#about");
+    if (nextSection) {
+      const sectionTop = nextSection.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    } else {
+      console.error("The #about section was not found.");
+    }
+  }}
+/>
           </div>
         </div>
       </div>

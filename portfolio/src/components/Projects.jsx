@@ -59,7 +59,7 @@ export default function Projects() {
                             patient interactions and showcase services. Built with React and React Router for seamless 
                             navigation, and styled with custom CSS for a clean, professional aesthetic. 
                             This project reflects my ability to deliver functional, user-centered solutions with a focus 
-                            on elegant design.</p>
+                            on elegant design. (Desktop version in progress)</p>
                     </div>
                 </div>
             </a>

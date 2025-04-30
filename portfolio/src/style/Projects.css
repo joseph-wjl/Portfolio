@@ -7,7 +7,7 @@
 
 .cards {
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 150vw;
@@ -19,7 +19,7 @@
 .card {
     position: absolute;
     width: 700px;
-    height: 550px;
+    height: 650px;
     top: 50%;
     left: 50%;
     transform-origin: center center;
