@@ -46,7 +46,7 @@ export default function Navbar() {
                                 key={item}
                                 onClick={() => {
                                     if (item === "Resume") {
-                                        window.open("https://drive.google.com/file/d/1q37wgEyRm4NhFEz9iFKqbT1mKTHnfYpC/view?usp=drive_link", "_blank");
+                                        window.open("https://drive.google.com/file/d/1KXt5wjuUsmOkCAwA1uvOoA3DNg5X1d1P/view?usp=drive_link", "_blank");
                                       } else {
                                         const section = document.getElementById(item.toLowerCase().replace(" ", "-"));
                                         if (section) {
