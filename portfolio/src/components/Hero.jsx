@@ -98,8 +98,8 @@ export default function Hero() {
             <h1 className="special-font hero-heading text-blue-100">
               Hi, I am Joseph.
             </h1>
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              I build sleek & stunning websites.
+            <p className="mb-5 font-robert-regular text-xl text-blue-100">
+              I turn ideas into visually epic websites.
             </p>
             <div className="relative z-50">
   <Button
