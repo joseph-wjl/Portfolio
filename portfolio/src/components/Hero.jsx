@@ -23,10 +23,10 @@ export default function Hero() {
     // Detect when all DOM elements are rendered
     useEffect(() => {
       const handleLoad = () => {
-        // Ensure the loader stays for at least 2 seconds
+        // Ensure the loader stays for at least _ seconds
         setTimeout(() => {
-          setIsLoading(false); // Hide loader after 2 seconds
-        }, 1500);
+          setIsLoading(false); // Hide loader
+        }, 1300);
       };
     
       // Use window.onload for generic detection
@@ -58,26 +58,6 @@ export default function Hero() {
         },
       });
     });
-
-// Typewriter effect
-  const [text, setText] = useState(""); // State to hold the current text
-  const fullText = "Hi, I am Joseph."; // The full text to type
-  const speed = 100; // Typing speed in milliseconds
-
-  useEffect(() => {
-    let i = 0;
-
-    const typeWriter = () => {
-      if (i < fullText.length) {
-        setText((prev) => prev + fullText.charAt(i)); // Append the next character
-        i++;
-        setTimeout(typeWriter, speed); // Call the function again after `speed` ms
-      }
-    };
-
-    typeWriter(); // Start the typewriter effect
-  }, []); // Empty dependency array ensures this runs only once
-// 
 
   return (
     <div id="home" className="relative h-dvh w-screen overflow-x-hidden bg-violet-900">
