@@ -17,23 +17,43 @@ export default function Hero() {
   // Ref for Spline to apply GSAP animation (optional if clip-path applies to parent)
   const splineRef = useRef(null);
 
-  useGSAP(() => {
-    gsap.set("#video-frame", {
-      clipPath: "polygon(40% 0, 90% 0, 65% 100%, 10% 100%)",
-      borderRadius: "0% 0% 40% 10%",
+    useGSAP(() => {
+      gsap.set("#video-frame", {
+        clipPath: "polygon(40% 0, 90% 0, 65% 100%, 10% 100%)",
+        borderRadius: "0% 0% 40% 10%",
+      });
+      gsap.from("#video-frame", {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        borderRadius: "0% 0% 0% 0%",
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: "#video-frame",
+          start: "center center",
+          end: "bottom center",
+          scrub: true,
+        },
+      });
     });
-    gsap.from("#video-frame", {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      borderRadius: "0% 0% 0% 0%",
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: "#video-frame",
-        start: "center center",
-        end: "bottom center",
-        scrub: true,
-      },
-    });
-  });
+
+// Typewriter effect
+  const [text, setText] = useState(""); // State to hold the current text
+  const fullText = "Hi, I am Joseph."; // The full text to type
+  const speed = 100; // Typing speed in milliseconds
+
+  useEffect(() => {
+    let i = 0;
+
+    const typeWriter = () => {
+      if (i < fullText.length) {
+        setText((prev) => prev + fullText.charAt(i)); // Append the next character
+        i++;
+        setTimeout(typeWriter, speed); // Call the function again after `speed` ms
+      }
+    };
+
+    typeWriter(); // Start the typewriter effect
+  }, []); // Empty dependency array ensures this runs only once
+// 
 
   return (
     <div id="home" className="relative h-dvh w-screen overflow-x-hidden bg-violet-900">
@@ -72,8 +92,9 @@ export default function Hero() {
         {/* Overlay Content */}
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-blue-100">
-              Hi, I am Joseph.
+            <h1 className="special-font hero-heading text-blue-100" id="demo">
+            {text}
+              {/* Hi, I am Joseph. */}
             </h1>
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
               I build sleek & stunning websites.
@@ -99,7 +120,7 @@ export default function Hero() {
         </div>
       </div>
       <h1 className="absolute bottom-5 right-5 text-6xl mr-5 font-zentry text-white">
-        I am a Front End Developer
+        I am a <span className="text-violet-300">Front End Developer</span>
       </h1>
     </div>
   );
