@@ -96,12 +96,15 @@ export default function Hero() {
         {/* Overlay Content */}
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
+
             <h1 className="special-font hero-heading text-blue-100">
               Hi, I am Joseph.
             </h1>
+
             <p className="mb-5 font-robert-regular text-xl text-blue-100">
               I turn ideas into visually epic websites.
             </p>
+
             <div className="relative z-50">
               <Button
                 title="Learn More"
@@ -118,16 +121,21 @@ export default function Hero() {
                   }
                 }}
               />
-          </div>
+            </div>
+
           </div>
         </div>
       </div>
+
+
       <h1 className="absolute bottom-5 right-5 text-6xl mr-5 z-40 font-zentry text-white">
-          I am a <span>Front End Developer</span>
-        </h1>
-      <h1 className="absolute bottom-5 right-5 text-6xl mr-5 font-zentry text-black">
-        I am a <span>Front End Developer</span>
+          I am a <span className="text-violet-300 bg-black">Front End Developer</span>
       </h1>
+      <h1 className="absolute bottom-5 right-5 text-6xl mr-5 font-zentry text-black">
+          I am a <span>Front End Developer</span>
+      </h1>
+
+
     </div>
   );
 }
