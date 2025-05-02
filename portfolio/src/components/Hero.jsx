@@ -14,8 +14,32 @@ gsap.registerPlugin(ScrollTrigger);
 const Spline = lazy(() => import("@splinetool/react-spline"));
 
 export default function Hero() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
   // Ref for Spline to apply GSAP animation (optional if clip-path applies to parent)
   const splineRef = useRef(null);
+
+    // Detect when all DOM elements are rendered
+    useEffect(() => {
+      const handleLoad = () => {
+        // Ensure the loader stays for at least 2 seconds
+        setTimeout(() => {
+          setIsLoading(false); // Hide loader after 2 seconds
+        }, 1500);
+      };
+    
+      // Use window.onload for generic detection
+      if (document.readyState === "complete") {
+        handleLoad();
+      } else {
+        window.addEventListener("load", handleLoad);
+      }
+    
+      return () => {
+        window.removeEventListener("load", handleLoad);
+      };
+    }, []);
 
     useGSAP(() => {
       gsap.set("#video-frame", {
@@ -57,7 +81,15 @@ export default function Hero() {
 
   return (
     <div id="home" className="relative h-dvh w-screen overflow-x-hidden bg-violet-900">
-      
+      {isLoading && (
+        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
+            <div className="three-body">
+                <div className="three-body__dot" />
+                <div className="three-body__dot" />
+                <div className="three-body__dot" />
+            </div>
+        </div>
+      )}
 
       <div id="video-frame" className="relative">
         {/* Spline Background */}
