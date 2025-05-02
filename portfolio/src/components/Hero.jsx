@@ -57,31 +57,12 @@ export default function Hero() {
 
   return (
     <div id="home" className="relative h-dvh w-screen overflow-x-hidden bg-violet-900">
-      {/* 3D Background */}
-      {/* <div id="video-frame" className="absolute inset-0 z-0">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Canvas camera={{ position: [0, 0, 15], fov: 45 }}> */}
-            {/* <ambientLight intensity={0.2} color="#1a1a40" />
-            <directionalLight position={[5, 5, 5]} intensity={1} color="#ffffff" /> */}
-            {/* <OrbitControls enablePan={false} enableZoom={true} /> */}
-            {/* <Tesseract />
-          </Canvas>
-        </Suspense> */}
+      
+
       <div id="video-frame" className="relative">
         {/* Spline Background */}
         <div className="absolute left-0 top-0 size-full z-0">
-          {/* <Suspense fallback={<div>Loading...</div>}>
-              <Spline
-                scene="https://prod.spline.design/FY-1Ma71iKrhvppj/scene.splinecode"
-                className="w-full h-full object-cover"
-              />
-            </Suspense> */}
-
-            {/* <figure>
-              <div>
-                <Tesseract />
-              </div>
-            </figure> */}
+          
             <video src="/videos/chips.mp4" autoPlay loop muted></video>
 
         </div>
