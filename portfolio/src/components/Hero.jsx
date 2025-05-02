@@ -41,15 +41,16 @@ export default function Hero() {
       };
     }, []);
 
-     // Hide scrollbar while loading
-    useEffect(() => {
-      if (isLoading) {
-        document.body.style.overflow = "hidden"; // Disable scrolling
-      } else {
-        document.body.style.overflow = "auto"; // Enable scrolling
-      }
-    }, [isLoading]);
+    // // Hide scrollbar while loading
+    // useEffect(() => {
+    //   if (isLoading) {
+    //     document.body.style.overflow = "hidden"; // Disable scrolling
+    //   } else {
+    //     document.body.style.overflow = "auto"; // Enable scrolling
+    //   }
+    // }, [isLoading]);
 
+     
     useGSAP(() => {
       gsap.set("#video-frame", {
         clipPath: "polygon(40% 0, 90% 0, 65% 100%, 10% 100%)",
