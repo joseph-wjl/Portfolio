@@ -82,16 +82,17 @@ export default function Hero() {
       )}
 
       <div id="video-frame" className="relative">
-        {/* Spline Background */}
-        <div className="absolute left-0 top-0 size-full z-0">
-          
-            <video src="/videos/chips.mp4" autoPlay loop muted></video>
 
+        <div className="absolute left-0 top-0 size-full z-0">
+            <video src="/videos/chips.mp4" autoPlay loop muted></video>
         </div>
-        {/* Overlay for Readability */}
-        <div className="absolute left-0 top-0 size-full bg-black bg-opacity-40 z-5"></div>
-        {/* Placeholder Section (Maintains Structure) */}
-        <section className="z-0 min-h-screen bg-transparent" />
+
+        
+
+          {/* Overlay for Readability */}
+          <div className="absolute left-0 top-0 size-full bg-black bg-opacity-40 z-5"></div>
+          {/* Placeholder Section (Maintains Structure) */}
+          <section className="z-0 min-h-screen bg-transparent" />
         {/* Overlay Content */}
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
@@ -102,27 +103,30 @@ export default function Hero() {
               I turn ideas into visually epic websites.
             </p>
             <div className="relative z-50">
-  <Button
-    title="Learn More"
-    leftIcon={<TiLocationArrow />}
-    containerClass="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex-center gap-1"
-    onClick={() => {
-      const nextSection = document.querySelector("#about");
-      if (nextSection) {
-        const sectionTop = nextSection.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({
-          top: sectionTop,
-          behavior: "smooth",
-        });
-      }
-    }}
-  />
-</div>
+              <Button
+                title="Learn More"
+                leftIcon={<TiLocationArrow />}
+                containerClass="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex-center gap-1"
+                onClick={() => {
+                  const nextSection = document.querySelector("#about");
+                  if (nextSection) {
+                    const sectionTop = nextSection.getBoundingClientRect().top + window.scrollY;
+                    window.scrollTo({
+                      top: sectionTop,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
+              />
+          </div>
           </div>
         </div>
       </div>
-      <h1 className="absolute bottom-5 right-5 text-6xl mr-5 font-zentry text-white">
-        I am a <span className="text-violet-300">Front End Developer</span>
+      <h1 className="absolute bottom-5 right-5 text-6xl mr-5 z-40 font-zentry text-white">
+          I am a <span>Front End Developer</span>
+        </h1>
+      <h1 className="absolute bottom-5 right-5 text-6xl mr-5 font-zentry text-black">
+        I am a <span>Front End Developer</span>
       </h1>
     </div>
   );
