@@ -13,12 +13,6 @@ export default function Footer() {
                 jlau.dev@gmail.com
             </a>
 
-            {/* <a href="https://linkedin.com/in/joseph-wjl" target="_blank">
-                <FaLinkedin className="cursor-pointer text-3xl" />
-            </a>
-            <a href="https://github.com/joseph-wjl" target="_blank">
-                <FaGithub className="cursor-pointer text-3xl"/>
-            </a> */}
         </div>
     )
 }
