@@ -115,7 +115,9 @@ export default function Projects() {
                 <div className="card-img">
                 </div>
                 <div className="card-content">
-                    <p>Coming soon</p>
+                    <div className="project-descriptions">
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             <div className="card-empty"></div>
