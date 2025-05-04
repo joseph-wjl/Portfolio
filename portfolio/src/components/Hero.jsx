@@ -118,6 +118,7 @@ export default function Hero() {
                       top: sectionTop,
                       behavior: "smooth",
                     });
+                    console.log("clicked")
                   }
                 }}
               />

@@ -38,7 +38,7 @@ export default function Projects() {
                         <span className="pill">CSS</span>
                         <span className="pill">Three.js</span>
                         <span className="pill">GSAP</span>
-                        <p>
+                        <div className="project-descriptions">
                             <div className="py-3">
                                 A dynamic personal portfolio showcasing my journey as a self-taught web developer.
                             </div> 
@@ -51,7 +51,7 @@ export default function Projects() {
                                 My artistic passion shines through in the carefully crafted UI, blending aesthetics with seamless functionality to 
                                 create an engaging user experience.
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -65,7 +65,7 @@ export default function Projects() {
                         <span className="pill">React Router</span>
                         <span className="pill">Bootstrap</span>
                         <span className="pill">CSS</span>
-                        <p>  
+                        <div className="project-descriptions">  
                             <div className="py-1">
                             A real-world web application developed for a Chinese medicine clinic — Altruism Healthcare, designed to streamline 
                             patient interactions and showcase services.
@@ -82,7 +82,7 @@ export default function Projects() {
                             <div className="py-1">
                                 (Desktop version in progress)
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -94,7 +94,7 @@ export default function Projects() {
                     <div className="card-content font-robert-regular">
                         <span className="pill">JavaScript</span>
                         <span className="pill">CSS</span>
-                        <p>  
+                        <div className="project-descriptions">  
                             <div className="py-2">
                                 An early-stage personal project born from my passion for fitness, Eat Out is a mobile-first responsive web app for  
                                 fitness enthusiasts to track calories and macros while dining out.
@@ -108,7 +108,7 @@ export default function Projects() {
                                 Designed completely from scratch with both aesthetics and usability in mind, 
                                 it empowers users to stay on track with their nutrition goals.
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </a>   
