@@ -105,11 +105,30 @@ export default function Hero() {
               I turn ideas into visually epic websites.
             </p>
 
-            <div className="relative z-50">
+            {/* <div className="relative z-50">
               <Button
                 title="Learn More"
                 leftIcon={<TiLocationArrow />}
                 containerClass="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex-center gap-1"
+                // onClick={() => {
+                //   console.log("clicked")
+                //   const nextSection = document.querySelector("#about");
+                //   if (nextSection) {
+                //     const sectionTop = nextSection.getBoundingClientRect().top + window.scrollY;
+                //     window.scrollTo({
+                //       top: sectionTop,
+                //       behavior: "smooth",
+                //     });
+                //   }
+                // }}
+              />
+            </div> */}
+
+
+            <div className="relative z-50">
+              <button
+                className="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex items-center justify-center 
+                  gap-1 px-7 py-3 mt-5 rounded-full uppercase font-robert-medium text-xs"
                 onClick={() => {
                   const nextSection = document.querySelector("#about");
                   if (nextSection) {
@@ -118,10 +137,12 @@ export default function Hero() {
                       top: sectionTop,
                       behavior: "smooth",
                     });
-                    console.log("clicked")
                   }
                 }}
-              />
+              >
+                <TiLocationArrow className="text-lg"/>
+                Learn More
+              </button>
             </div>
 
           </div>
