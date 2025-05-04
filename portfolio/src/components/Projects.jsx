@@ -21,7 +21,6 @@ export default function Projects() {
                 <h1>Altruism</h1>
                 <h1>Eat Out</h1>
                 <h1>Coming Soon</h1>
-                <h1>Coming Soon</h1>
             </div>
             </div>
         </div>
