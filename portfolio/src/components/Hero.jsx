@@ -105,27 +105,9 @@ export default function Hero() {
               I turn ideas into visually epic websites.
             </p>
 
+
+          {/* Default Scrolling */}
             {/* <div className="relative z-50">
-              <Button
-                title="Learn More"
-                leftIcon={<TiLocationArrow />}
-                containerClass="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex-center gap-1"
-                // onClick={() => {
-                //   console.log("clicked")
-                //   const nextSection = document.querySelector("#about");
-                //   if (nextSection) {
-                //     const sectionTop = nextSection.getBoundingClientRect().top + window.scrollY;
-                //     window.scrollTo({
-                //       top: sectionTop,
-                //       behavior: "smooth",
-                //     });
-                //   }
-                // }}
-              />
-            </div> */}
-
-
-            <div className="relative z-50">
               <button
                 className="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex items-center justify-center 
                   gap-1 px-7 py-3 mt-5 rounded-full uppercase font-robert-medium text-xs"
@@ -141,6 +123,45 @@ export default function Hero() {
                 }}
               >
                 <TiLocationArrow className="text-lg"/>
+                Learn More
+              </button>
+            </div> */}
+
+
+          {/* Slow Scrolling */}
+            <div className="relative z-50">
+              <button
+                className="bg-violet-300 hover:bg-yellow-400 transition duration-300 flex items-center justify-center 
+                  gap-1 px-7 py-3 mt-5 rounded-full uppercase font-robert-medium text-xs"
+                onClick={() => {
+                  const nextSection = document.querySelector("#about");
+                  if (nextSection) {
+                    const targetPosition = nextSection.getBoundingClientRect().top + window.scrollY;
+                    const startPosition = window.scrollY;
+                    const distance = targetPosition - startPosition;
+                    const duration = 1200;
+                    let startTime = null;
+
+                    const scrollAnimation = (currentTime) => {
+                      if (!startTime) startTime = currentTime;
+                      const timeElapsed = currentTime - startTime;
+                      const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+                      window.scrollTo(0, run);
+                      if (timeElapsed < duration) requestAnimationFrame(scrollAnimation);
+                    };
+
+                    const easeInOutQuad = (t, b, c, d) => {
+                      t /= d / 2;
+                      if (t < 1) return (c / 2) * t * t + b;
+                      t--;
+                      return (-c / 2) * (t * (t - 2) - 1) + b;
+                    };
+
+                    requestAnimationFrame(scrollAnimation);
+                  }
+                }}
+              >
+                <TiLocationArrow className="text-lg" />
                 Learn More
               </button>
             </div>
