@@ -102,7 +102,7 @@ export default function Hero() {
             </h1>
 
             <p className="mb-5 font-robert-regular text-xl text-blue-100">
-              I turn ideas into visually epic websites.
+              I turn ideas into <span className="text-violet-300">visually epic websites</span>.
             </p>
 
 
