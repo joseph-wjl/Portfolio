@@ -175,7 +175,7 @@ export default function Hero() {
           I am a <span className="text-violet-300 bg-black">Front End Developer</span>
       </h1>
       <h1 className="absolute bottom-5 right-5 text-6xl mr-5 font-zentry text-black">
-          I am a <span>Front End Developer</span>
+          I am a <span>Fullstack Developer</span>
       </h1>
 
 
