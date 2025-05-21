@@ -61,7 +61,6 @@ export default function Projects() {
                     </div>
                     <div className="card-content font-robert-regular">
                         <span className="pill">React</span>
-                        <span className="pill">React Router</span>
                         <span className="pill">Bootstrap</span>
                         <span className="pill">CSS</span>
                         <div className="project-descriptions">  
