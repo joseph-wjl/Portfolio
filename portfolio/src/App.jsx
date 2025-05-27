@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Immerse from "./components/Immerse";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -15,6 +16,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
       {/* <section className="relative h-screen w-full bg-blue-200">
         <Tesseract />
       </section> */}
