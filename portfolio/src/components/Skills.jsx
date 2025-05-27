@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import AnimatedTitle from './AnimatedTitle';
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -38,42 +39,43 @@ export default function Skills() {
     return (
         <section id="skills" className="relative w-full min-h-screen bg-grey-1000 py-16 text-white ">
             <div>
-                <h1 className="text-white text-center">My Stack</h1>
+                <AnimatedTitle title="My Stack" 
+                containerClass="mb-10 mt-10 text-center special-font font-zentry text-white"/>
             </div>    
             <div className="flex flex-col items-center justify-center">
                 <div >
-                    <div className="flex text-center gap-10">
-                        <div className="animated-logo-hidden logo">
-                            <FaHtml5 className="text-white text-7xl"/>HTML
+                    <div className="flex items-center text-center gap-10 text-black font-semibold py-20">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <FaHtml5 className="text-black text-7xl"/>HTML
                         </div>
-                        <div className="animated-logo-hidden logo">
-                            <FaCss3Alt className="text-white text-7xl"/>CSS
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <FaCss3Alt className="text-black text-7xl"/>CSS
                         </div>
-                        <div className="animated-logo-hidden logo">
-                            <IoLogoJavascript className="text-white text-7xl"/>JavaScript
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <IoLogoJavascript className="text-black text-7xl"/>JavaScript
                         </div>
-                        <div className="animated-logo-hidden logo">
-                            <FaReact className="text-white text-7xl"/>React
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <FaReact className="text-black text-7xl"/>React
                         </div>
-                        <div className="animated-logo-hidden logo">
-                            <RiNextjsFill className="text-white text-7xl"/>Next.js
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <RiNextjsFill className="text-black text-7xl"/>Next.js
                         </div>
                     </div>
-                    <div className="flex text-center gap-10">
-                        <div className="animated-logo-hidden logo">
-                            <FaNodeJs className="text-white text-7xl"/>Node.js
+                    <div className="flex text-center gap-10 text-black font-semibold pb-20">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <FaNodeJs className="text-black text-7xl"/>Node.js
                         </div>
-                        <div className="animated-logo-hidden logo">
-                            <SiExpress className="text-white text-7xl"/>Express.js
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <SiExpress className="text-black text-7xl"/>Express.js
                         </div>
-                        <div className="animated-logo-hidden logo">
-                            <BiLogoMongodb className="text-white text-7xl"/>MongoDB
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <BiLogoMongodb className="text-black text-7xl"/>MongoDB
                         </div>
-                        <div className="animated-logo-hidden logo">
-                            <FaBootstrap className="text-white text-7xl"/>Bootstrap
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <FaBootstrap className="text-black text-7xl"/>Bootstrap
                         </div>
-                        <div className="animated-logo-hidden logo">
-                            <RiTailwindCssFill className="text-white text-7xl"/>Tailwind CSS
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                            <RiTailwindCssFill className="text-black text-7xl"/>Tailwind CSS
                         </div>
                     </div>
                 </div>
