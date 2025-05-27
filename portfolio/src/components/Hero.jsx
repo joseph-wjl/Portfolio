@@ -172,10 +172,10 @@ export default function Hero() {
 
 
       <h1 className="absolute bottom-5 right-5 text-6xl mr-5 z-40 font-zentry text-white">
-          I am a <span className="text-violet-300 bg-black">Front End Developer</span>
+          I am a <span className="text-violet-300 bg-black">Web Developer</span>
       </h1>
       <h1 className="absolute bottom-5 right-5 text-6xl mr-5 font-zentry text-black">
-          I am a <span>Fullstack Developer</span>
+          I am a <span>Web Developer</span>
       </h1>
 
 

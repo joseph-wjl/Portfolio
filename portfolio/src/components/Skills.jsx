@@ -45,37 +45,37 @@ export default function Skills() {
             <div className="flex flex-col items-center justify-center">
                 <div >
                     <div className="flex items-center text-center gap-10 text-black font-semibold py-20">
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
                             <FaHtml5 className="text-black text-7xl"/>HTML
                         </div>
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
                             <FaCss3Alt className="text-black text-7xl"/>CSS
                         </div>
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
                             <IoLogoJavascript className="text-black text-7xl"/>JavaScript
                         </div>
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
                             <FaReact className="text-black text-7xl"/>React
                         </div>
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
                             <RiNextjsFill className="text-black text-7xl"/>Next.js
                         </div>
                     </div>
                     <div className="flex text-center gap-10 text-black font-semibold pb-20">
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
                             <FaNodeJs className="text-black text-7xl"/>Node.js
                         </div>
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
                             <SiExpress className="text-black text-7xl"/>Express.js
                         </div>
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
                             <BiLogoMongodb className="text-black text-7xl"/>MongoDB
                         </div>
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
                             <FaBootstrap className="text-black text-7xl"/>Bootstrap
                         </div>
-                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg">
-                            <RiTailwindCssFill className="text-black text-7xl"/>Tailwind CSS
+                        <div className="animated-logo-hidden logo bg-violet-300 p-8 rounded-lg flex flex-col items-center">
+                            <RiTailwindCssFill className="text-black text-7xl"/>TailwindCSS
                         </div>
                     </div>
                 </div>
